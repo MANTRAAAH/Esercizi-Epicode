@@ -14,6 +14,13 @@
             color: red;
             text-decoration: none;
         }
+        #footer{
+            text-align: center;
+            font-style: italic;
+        }
+        #footer_a{
+            text-decoration: none;
+        }
         h3{
             text-align: center;
         }
@@ -37,7 +44,7 @@
 <body>
 
 <h1>Antonio Massimo Annunziata</h1> 
-    <h2>ant.annunz.02@gmail.com</h2>
+    <a href="mailto:ant.annunz.02@gmail.com"><h2>ant.annunz.02@gmail.com</h2></a>
        <a href="#footer">vai al footer</a>
     <main>
        <div class="img_container"><a href="#"><img src="img/IMG_0561.jpeg" alt="Foto dell'autore" width="150" id="img"></a></div>
@@ -46,23 +53,23 @@
         
         <p> Qui puoi trovare<a href="https://www.linkedin.com/in/antonio-massimo-annunziata-4554702b8/" target="_blank"> il mio profilo Linkedin</a> e <a href="https://github.com/MANTRAAAH" target="_blank"> il mio profilo GitHub</a></p>
     </main>
-    <footer id="footer">Copyright <strong>Antonio Massimo Annunziata</strong></footer>
-    <p>Sono un appassionato di musica, indifferentemente dal genere, di auto (specialmente se Audi) e della tecnologia, quest'ultima sin dall'infanzia, sono cresciuto davanti ad un PC <a href="#">ed aver messo da parte questa mia passione mi aveva un po' spezzato il cuore</a>, ed ecco perchè ora sto rimettendo mano a questo mondo, mi appartiene.</p>
+    <p>Sono un appassionato di musica, indifferentemente dal genere, di auto (specialmente se Audi) e della tecnologia, quest'ultima sin dall'infanzia, sono cresciuto davanti ad un PC <a href="#" id="footer_a">ed aver messo da parte questa mia passione mi aveva un po' spezzato il cuore</a>, ed ecco perchè ora sto rimettendo mano a questo mondo, mi appartiene.</p>
     <div>
-        <ul>Le mie competenze
+        <ul>Le mie competenze:
             <li>Parlo abbastanza bene l'inglese e lo spagnolo.</li>
             <li>Riesco ad adattarmi facilmente alle proposte tecnologiche.</li>
             <li>Ho lavorato come barman e cameriere,agisco abbastanza bene sotto pressione e in team.</li>
         </ul>
-        <ol>Competenze da acquisire
+        <ol type="I">Competenze da acquisire:
             <li>Sviluppo Web Full Stack.</li>
             <li>Migliorare le mie soft skills(Pensiero critico e analitico, Team Working e inventiva).</li>
             <li>Time Management.</li>
         </ol>
+        <hr>
     </div>
     <h3>Le mie esperienze accademiche</h3>
     <div id="tabella_formazione">
-        <table width="80%">
+        <table width="100%">
          <tr>
             <th style="border: 1px solid;">Luogo</th> 
             <th style="border: 1px solid;">Indirizzo</th> 
@@ -111,5 +118,12 @@
             </tr>
         </table>
     </div>
+    <hr>
+    <footer id="footer">Copyright <strong>Antonio Massimo Annunziata</strong>
+        <ul style="list-style: none;">Altri contatti:
+           <li><a href="https://www.instagram.com/mvntrvh_/">Instagram</a></li>
+           <li><a href="https://t.me/Mvntrvh">Telegram</a></li> 
+        </ul>
+    </footer>
 </body>
 </html>
