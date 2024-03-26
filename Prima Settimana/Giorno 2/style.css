@@ -4,19 +4,33 @@
     justify-content: left;
     justify-content: space-evenly;
 }
+.logo_container img{
+width: 300px;
+}
 .nav_bar{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.nav_bar a{
+    text-decoration: none;
 }
 .nav_bar li{
     list-style: none;
 }
 .titolo_articolo{
 text-align: center;
+font-size: 2em;
 }
 .sottotitolo_articolo h3{
-    text-align: center;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.paragrafo_articolo{
+    font-size: 1em;
+
 }
 table{
     text-align: center;
