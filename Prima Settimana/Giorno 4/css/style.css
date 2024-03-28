@@ -124,7 +124,7 @@ table,th,tr,td{
 .video{
     width: 350px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 1em;
     padding-left: 0.5em;
 }
