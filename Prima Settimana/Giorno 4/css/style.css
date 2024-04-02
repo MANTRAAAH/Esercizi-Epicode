@@ -66,8 +66,8 @@ article h1{
 article h2{
     margin-top:1.5em;
     color: grey;
-    font-size: 1em;
-    letter-spacing: 1px;
+    font-size: .8em;
+    letter-spacing: 2px;
 }
 article p{
     margin-top: 1em;
@@ -102,6 +102,7 @@ span{
 .tabella h2{
     font-weight: bold;
     text-align: center;
+    padding-bottom: 1em;
 }
 th{
 background-color: #3366CC;
@@ -135,6 +136,7 @@ table,th,tr,td{
     margin-top: 2em;
     padding-bottom: 1em;
     margin-bottom: 2em;
+    border-radius: 5px;
 }
 .form h1{
     text-align: center;
@@ -146,14 +148,16 @@ table,th,tr,td{
     margin-bottom:1em ;
 }
 input{
-    width: 200px;
-    height: 20px;
-    border-bottom: 1px dotted black;
+padding: .5em;
+border: 1px dotted transparent;
 }
 button{
 background-color: #3366CC;
 color: white;
+border: 1px solid transparent;
+border-radius: 2px;
 text-transform: uppercase;
+padding: .5em;
 font-weight: bolder;
 }
 /* ELEMENTI NELL' ASIDE */
@@ -161,14 +165,15 @@ font-weight: bolder;
     background-color: #EEDDE0;
     padding:0.5em ;
     margin: 1em;
-    border: 1px solid black ;
+    border: 1px solid transparent ;
+    border-radius: 5px;
 }
 aside a{
     color: blue;
     text-decoration: underline;
 }
 .data_articolo{
-    text-align: left;
+    text-align: end;
 }
 /* FOOTER */
 .footer_container{
@@ -180,6 +185,7 @@ aside a{
     margin-top: 2em;
     padding: 1em;
     box-shadow: 2px 2px 2px gray;
+    border-radius: 10px;
 }
 
 .copy{
