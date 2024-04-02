@@ -44,7 +44,7 @@ console.log('il mio nome è ' +myName);     //<- ho dato un'istruzione console l
   var numero2 = 20;  //<- seconda variabile
   var somma = numero1 + numero2;
 
-  console.log('Il totale è '+somma);    //<- somma delle due variabili in console.
+  console.log('Il totale è ' +somma);    //<- somma delle due variabili in console.
 
 
 
@@ -73,8 +73,8 @@ myName = "Antonio";             // <- decommentando si evidenzia che c'è un err
 */
 
 
-y = x - 4;    //<- istruzione per la sottrazione
-console.log(x - 4)   //<- log per la verifica della riuscita dell'istruzione
+var y = x - 4;    //<- istruzione per la sottrazione
+console.log(y)   //<- log per la verifica della riuscita dell'istruzione
 
 
 
