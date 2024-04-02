@@ -13,11 +13,14 @@ REGOLE
 
 /*
  I principali datatype sono:
- TIPO DI DATI STRINGA: è una sequenza di lettere racchiusa in virgolette o doppie virgolette, è indifferente, l'importante è che si utilizzino in una stringa lo stesso tipo di virgolette sia all'inizio che alla fine di essa.
- Esiste un tipo speciale di stringa, chiamata stringa vuota ed è scritta lasciando, appunto, vuote le virgolette. Per scrivere i caratteri speciali si utilizza la barra rovesciata (\ comunemente detta carattere di escaping) e
-  ci permette di trasformare un carattere che normalmente potrebbe dare problemi al codice, rendendolo privo di funzione.
+ TIPO DI DATI STRINGA: è una sequenza di lettere racchiusa in virgolette o doppie virgolette, è indifferente, l'importante è che si utilizzino in una stringa lo stesso tipo di virgolette 
+ sia all'inizio che alla fine di essa.
+ Esiste un tipo speciale di stringa, chiamata stringa vuota ed è scritta lasciando, appunto, vuote le virgolette. Per scrivere i caratteri speciali 
+ si utilizza la barra rovesciata (\ comunemente detta carattere di escaping) e
+ci permette di trasformare un carattere che normalmente potrebbe dare problemi al codice, rendendolo privo di funzione.
   
-  TIPO DI DATI NUMERI: i dati numerici possono essere interi o decimali(102 o 10.2), senza alcuna differenza, ne basta specificare la virgola e possono essere positivi (10) e/o negativi (-10). Esiste un carattere (NaN,letteralmente Not A Number) che definisce un valore numerico non definito.
+  TIPO DI DATI NUMERI: i dati numerici possono essere interi o decimali(102 o 10.2), senza alcuna differenza, ne basta specificare la virgola e possono essere positivi (10) e/o negativi (-10). 
+  Esiste un carattere (NaN,letteralmente Not A Number) che definisce un valore numerico non definito.
 
   TIPO DI DATI NULL: definisce un valore che non rientri nei tipi di dati del linguaggio di javascript.
 
@@ -42,7 +45,7 @@ console.log('il mio nome è ' +myName);     //<- ho dato un'istruzione console l
   
   var numero1 = 12;  //<- prima variabile
   var numero2 = 20;  //<- seconda variabile
-  var somma = numero1 + numero2;
+  var somma = numero1 + numero2; //<-istruzione
 
   console.log('Il totale è ' +somma);    //<- somma delle due variabili in console.
 
@@ -66,7 +69,7 @@ var x = 12;
 /*
 const myName = "Annunziata";     //<- La const myName è Annunziata
 myName = "Antonio";             // <- decommentando si evidenzia che c'è un errore in console che fa notare l'impossibilità di dare alla stringa myName il valore "Antonio"
-*/
+
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
@@ -74,7 +77,7 @@ myName = "Antonio";             // <- decommentando si evidenzia che c'è un err
 
 
 var y = x - 4;    //<- istruzione per la sottrazione
-console.log(y)   //<- log per la verifica della riuscita dell'istruzione
+console.log(y);   //<- log per la verifica della riuscita dell'istruzione
 
 
 
@@ -87,5 +90,5 @@ console.log(y)   //<- log per la verifica della riuscita dell'istruzione
 
 var name1 = 'john';
 var name2 = 'John';
-name1==name2 ?  console.log("sono uguali") : console.log("sono diversi");
-name1==name2.toLowerCase() ?  console.log("sono uguali") : console.log("sono diversi");
+name1===name2 ?  console.log("sono uguali") : console.log("sono diversi");
+name1===name2.toLowerCase() ?  console.log("sono uguali") : console.log("sono diversi");
