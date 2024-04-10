@@ -1,0 +1,66 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(271, 76%, 53%);
+    text-align: center;
+}
+form{
+    margin-top: 40vh;
+}
+#daFare{
+    width: 25vh;
+    height: 2.5vh;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+#addListItem{
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #f15aff 0, #3d019c 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  height: 2.5vh;
+}
+
+#addListItem:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#addListItem:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+#addListItem:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.div_list{
+    text-align: left;
+    margin-left: 36vw;
+    margin-right: 38vw;
+    padding-bottom: 10vh;
+}
+ul{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+line-through{
+    text-decoration: line-through;
+}
+
+.trash{
+  float: right;
+  
+    background-color: red;
+    right: 0;
+    top: 0;
+}
