@@ -1,6 +1,5 @@
 const handleSubmit = function (e) {
     e.preventDefault()
-
     nuovoElemento()
   }
   
@@ -11,28 +10,17 @@ const handleSubmit = function (e) {
     newElement.textContent = elementText;
     document.getElementById("myList").appendChild(newElement);
     var bin=document.createElement("button");
-    bin.textContent= "cancella";
+    bin.innerHTML= `<i class="fas fa-trash"></i>`;
     bin.classList.add("trash");
     bin.addEventListener("click",function(){
         this.parentNode.remove();
     });
     newElement.appendChild(bin);
     var icona= document.createElement(i);
-    icona.classList.add("fas", "fa-trash-alt");
+    icona.className.add("fas", "fa-trash-alt");
     bin.appendChild(icona);
     document.getElementById("myList").appendChild(newElement);
-
-    }
-
-document.getElementById("myList").addEventListener("click", function done(event){
-    if (event.target.tagName ==='li'){
-        event.currentTarget.classList.toggle("line-through")
-    }
-})
-
-function eliminaTask(){
-
-}
+  }
 
 
 window.onload = function () {

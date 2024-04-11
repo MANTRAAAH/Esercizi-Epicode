@@ -58,8 +58,9 @@ line-through{
 }
 
 .trash{
-  float: right;
-  
+    float: right;
+    padding: 10px;
+    border-radius: 20px;
     background-color: red;
     right: 0;
     top: 0;
