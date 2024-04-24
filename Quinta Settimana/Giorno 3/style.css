@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(255, 255, 0, 0.178);
+  border-radius: 10em;
+  padding: 20px;
+  width: auto;
+}
+.li1 {
+  order: 3;
+}
+.li2 {
+  order: 1;
+}
+.li3 {
+  order: 2;
+}
+.li4 {
+  order: 4;
+}
+.li5 {
+  order: 5;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav img {
+  width: 2.1em;
+  margin-right: 1em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 0, 0.774);
+  border-radius: 10em;
+  padding: 1em 2em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#logo {
+  display: flex;
+  font-size: 2.1em;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+article.card {
+  background-color: rgba(255, 255, 0, 0.178);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+  border-radius: 50px;
+  margin: 2em auto;
+  overflow: hidden;
+}
+.text-container {
+  display: flex;
+  flex-direction: row; /* Posiziona gli elementi uno accanto all'altro */
+  justify-content: space-between; /* Separa gli elementi */
+  flex-grow: 1;
+}
+.text-container p {
+  width: 50%; /* Assicura che entrambi i paragrafi occupino metà dello spazio disponibile */
+}
+.text-container h3,
+.text-container p:first-of-type {
+  width: 100%; /* Occupa l'intera larghezza per h3 e il primo p */
+}
+.text-container p:last-of-type {
+  align-self: flex-start; /* Allinea il secondo p all'inizio, a destra */
+}
+button {
+  margin: 0 auto;
+  padding: 1em;
+
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: bisque;
+}
+aside {
+  text-align: center;
+}
+.container-testo {
+  background-color: rgba(255, 255, 0, 0.178);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2em;
+}
+.news-img {
+  max-width: 100%;
+  height: auto;
+  order: 3;
+}
+h3 {
+  order: 1;
+}
+p {
+  order: 2;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  nav {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  nav ul {
+    flex-direction: column; /* Adjust flex direction for vertical alignment */
+    width: 100%; /* Adjust width to fill the nav */
+    height: 100%;
+    margin: 0 auto;
+  }
+  nav ul li {
+    text-align: left; /* Align li text to the left */
+    width: 75%; /* Make li fill the width of the ul/nav */
+    margin-bottom: 1px;
+    padding: 0.5em 2em;
+  }
+}
