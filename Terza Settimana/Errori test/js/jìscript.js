@@ -83,7 +83,7 @@ const arr2=[1,2,3];
 arr1.push(arr2);
 console.log("last: "+ arr1.pop()+ "length: " +arr1.length)
 console.log(arr2)
-
+// rimane [1,2,3] perchè è un elemento intero dell'array ryspetto a "0", la lunghezza è di 1 perchè dopo il .pop() rimane l'elemento [1,2,3];
 
 
 const animali=["cane","gatto","topo"]
