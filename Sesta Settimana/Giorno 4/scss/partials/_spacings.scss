@@ -1,0 +1,47 @@
+$breakpoints-map: (
+  "sm": 576px,
+  "normal": 768px,
+  "md": 992px,
+  "lg": 1200px,
+  "xl": 1400px,
+  "xxl": 1600px,
+);
+
+$start-index: 1;
+
+@for $i from $start-index through length($breakpoints-map) {
+  $size: nth(map-values($breakpoints-map), $i);
+  $breakpoint: nth(map-keys($breakpoints-map), $i);
+
+  $class: "padding-#{$breakpoint}-block";
+
+  @media (min-width: $size) {
+    .#{$class} {
+      padding-block: 1rem;
+    }
+  }
+
+  $class: "padding-#{$breakpoint}-inline";
+
+  @media (min-width: $size) {
+    .#{$class} {
+      padding-inline: 1rem;
+    }
+  }
+
+  $class: "margin-#{$breakpoint}-block";
+
+  @media (min-width: $size) {
+    .#{$class} {
+      margin-block: 1rem;
+    }
+  }
+
+  $class: "margin-#{$breakpoint}-inline";
+
+  @media (min-width: $size) {
+    .#{$class} {
+      margin-inline: 1rem;
+    }
+  }
+}

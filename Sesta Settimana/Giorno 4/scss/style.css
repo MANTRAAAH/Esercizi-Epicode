@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tcolor {
+  color: #f4f4f4;
+}
+
+btn_color1 {
+  background-color: #0e6cff;
+}
+
+btn_color2 {
+  background-color: #ff8700;
+}
+
+btn_color3 {
+  background-color: #4caf50;
+}
+
+bg_hero {
+  background-color: #640fc5;
+}
+
+.btn-color-blu {
+  background-color: "#0e6cff";
+}
+
+.btn-color-orange {
+  background-color: "#ff8700";
+}
+
+.btn-color-green {
+  background-color: "#4caf50";
+}
+
+@media (min-width: 576px) {
+  .padding-sm-block {
+    padding-block: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .padding-sm-inline {
+    padding-inline: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .margin-sm-block {
+    margin-block: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .margin-sm-inline {
+    margin-inline: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .padding-normal-block {
+    padding-block: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .padding-normal-inline {
+    padding-inline: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .margin-normal-block {
+    margin-block: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .margin-normal-inline {
+    margin-inline: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .padding-md-block {
+    padding-block: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .padding-md-inline {
+    padding-inline: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .margin-md-block {
+    margin-block: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .margin-md-inline {
+    margin-inline: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .padding-lg-block {
+    padding-block: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .padding-lg-inline {
+    padding-inline: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .margin-lg-block {
+    margin-block: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .margin-lg-inline {
+    margin-inline: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .padding-xl-block {
+    padding-block: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .padding-xl-inline {
+    padding-inline: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .margin-xl-block {
+    margin-block: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .margin-xl-inline {
+    margin-inline: 1rem;
+  }
+}
+@media (min-width: 1600px) {
+  .padding-xxl-block {
+    padding-block: 1rem;
+  }
+}
+@media (min-width: 1600px) {
+  .padding-xxl-inline {
+    padding-inline: 1rem;
+  }
+}
+@media (min-width: 1600px) {
+  .margin-xxl-block {
+    margin-block: 1rem;
+  }
+}
+@media (min-width: 1600px) {
+  .margin-xxl-inline {
+    margin-inline: 1rem;
+  }
+}
+.floating-element {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-grid > * {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.flex-grid2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-grid2 > * {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.animate {
+  animation-name: discesa;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes fade-in-descend {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

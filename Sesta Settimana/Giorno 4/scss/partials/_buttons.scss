@@ -1,0 +1,12 @@
+$btn-color-array: (
+  "blu": "#0e6cff",
+  "orange": "#ff8700",
+  "green": "#4caf50",
+);
+
+@each $color, $hex in $btn-color-array {
+  .btn-color-#{$color} {
+    background-color: $hex;
+    // Add any other styles you want for your buttons here
+  }
+}

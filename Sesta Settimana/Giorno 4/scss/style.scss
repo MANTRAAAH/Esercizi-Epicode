@@ -1,0 +1,26 @@
+@import "./partials/font";
+@import "./partials/reset";
+@import "./partials/colors";
+@import "./partials/buttons";
+@import "./partials/spacings";
+@import "./partials/mixins";
+@import "./partials/animations";
+
+$btn-color-array: (
+  "blu": #0e6cff,
+  "orange": #ff8700,
+  "green": #4caf50,
+);
+.floating-element {
+  @include floating;
+}
+.flex-grid {
+  @include grid(3);
+}
+.flex-grid2 {
+  @include grid(4);
+}
+
+.animate {
+  @include animazione(discesa, 1s, -20px, 0, 0.5s);
+}

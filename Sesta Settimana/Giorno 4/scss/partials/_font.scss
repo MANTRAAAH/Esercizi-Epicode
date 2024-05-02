@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+$rubik-normal: 400;
+$rubik-bold: 700;
+@mixin title-big($weight: $rubik-bold) {
+  .title-big {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $rubik-normal;
+  font-style: normal;
+}
