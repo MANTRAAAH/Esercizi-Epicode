@@ -29,6 +29,7 @@ console.log(user1.compareAge(user2));
 
 
 //ESERCIZIO 2
+
 class Pet {
     constructor(_petName, _ownerName, _species, _breed) {
         this.petName = _petName;
@@ -57,8 +58,6 @@ document.querySelector('form').addEventListener('submit', (event) => {
     const breed = document.getElementById('pet_breed_input').value;
 
     const newPet = new Pet(petName, ownerName, species, breed);
-
-    // Add the new pet to the list
     const petList = document.getElementById('pet_list');
     const petItem = document.createElement('div');
     petItem.classList.add('col', 'border', 'p-3', 'mb-3', 'mt-2');
@@ -69,7 +68,5 @@ document.querySelector('form').addEventListener('submit', (event) => {
         <p><strong>Breed:</strong> ${newPet.breed}</p>
     `;
     petList.appendChild(petItem);
-
-    // Clear the form inputs
     document.querySelector('form').reset();
 });
