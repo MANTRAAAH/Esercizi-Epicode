@@ -4,16 +4,15 @@ const saveButton = document.getElementById("save_btn");
 const cleanButton = document.getElementById("clean_btn");
 const displayButton = document.getElementById("display_btn");
 const input = document.getElementById("name");
+const displayDiv = document.getElementById("display_area");
 
 const save = function () {
-    const inputField = document.getElementById("name");
-    const inputText = inputField.value;
+    const inputText = input.value;
     localStorage.setItem("name", inputText);
     console.log("Testo salvato", inputText);
 };
 
 const display_text = function () {
-    const displayDiv = document.getElementById("display_area");
     const testoDaMostrare = localStorage.getItem("name");
     displayDiv.innerHTML = testoDaMostrare;
 };
