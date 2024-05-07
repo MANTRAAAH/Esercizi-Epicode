@@ -27,6 +27,7 @@ const pulisci = function () {
 const remove = function () {
     localStorage.removeItem("name");
     console.log("Nome rimosso");
+    display_text();
 };
 
 cleanButton.addEventListener("click", pulisci)
