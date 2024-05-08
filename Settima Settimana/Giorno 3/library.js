@@ -20,7 +20,7 @@ const displayBooks = (books) => {
         card.classList.add('col', 'col-sm-6', 'col-md-4', 'col-lg-3', 'col-xl-2', "mb-3");
 
         const cardInner = document.createElement('div');
-        cardInner.classList.add('card', 'h-100', "shadow");
+        cardInner.classList.add('card', 'h-100', "rounded-4", "overflow-hidden");
 
         const cardImage = document.createElement('img');
         cardImage.classList.add('card-img-top', 'flex-grow-1');
@@ -28,14 +28,14 @@ const displayBooks = (books) => {
         cardImage.alt = book.title;
 
         const cardBody = document.createElement('div');
-        cardBody.classList.add('card-body');
+        cardBody.classList.add('card-body', "d-flex", "flex-column", "flex-grow-1");
 
         const cardTitle = document.createElement('h5');
         cardTitle.classList.add('card-title');
         cardTitle.textContent = book.title;
 
         const cardPrice = document.createElement('p');
-        cardPrice.classList.add('card-text');
+        cardPrice.classList.add('card-text', "mt-2", "mb-1", "align-self-center");
         cardPrice.textContent = `$${book.price}`;
 
         const discardButton = document.createElement('button');
@@ -44,8 +44,8 @@ const displayBooks = (books) => {
         discardButton.addEventListener('click', () => discardBook(card));
 
         cardBody.appendChild(cardTitle);
-        cardBody.appendChild(cardPrice);
         cardBody.appendChild(discardButton);
+        cardBody.appendChild(cardPrice);
 
         cardInner.appendChild(cardImage);
         cardInner.appendChild(cardBody);
