@@ -17,7 +17,7 @@ const displayBooks = (books) => {
 
     books.forEach(book => {
         const card = document.createElement('div');
-        card.classList.add('col', 'col-md-3', 'b-3', "mb-3");
+        card.classList.add('col', 'col-md-3', "mb-3");
 
         const cardInner = document.createElement('div');
         cardInner.classList.add('card', 'h-100', "shadow");
