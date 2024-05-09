@@ -110,7 +110,7 @@ document.querySelector('.btn-search').addEventListener('click', function () {
 
             data.photos.forEach(photo => {
                 var newCol = document.createElement('div');
-                newCol.className = 'col-md-4';
+                newCol.className = 'col-md-3';
                 var newCard = document.createElement('div');
                 newCard.className = 'card mb-3';
 
