@@ -1,6 +1,6 @@
 document.querySelector('.btn-primary').addEventListener('click', function () {
 
-    var query = 'DOGS';
+    var query = 'coding';
     var apiKey = 'I39MRkzmevNwfsbkdI8pIT3aaNV1tUFAM27FH7TQr7xZpbAZlMtHJCoR';
     var url = 'https://api.pexels.com/v1/search?query=' + query;
 
@@ -28,7 +28,7 @@ document.querySelector('.btn-primary').addEventListener('click', function () {
 
 document.querySelector('.btn-secondary').addEventListener('click', function () {
 
-    var query = 'hamburgers';
+    var query = 'funny cats';
     var apiKey = 'I39MRkzmevNwfsbkdI8pIT3aaNV1tUFAM27FH7TQr7xZpbAZlMtHJCoR';
     var url = 'https://api.pexels.com/v1/search?query=' + query;
 
