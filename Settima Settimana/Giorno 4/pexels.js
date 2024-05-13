@@ -56,7 +56,7 @@ document.querySelector('.btn-secondary').addEventListener('click', function () {
                     var btnGroup = cards[index].querySelector('.btn-group');
                     var hideButton = document.createElement('button');
                     hideButton.type = 'button';
-                    hideButton.className = 'btn btn-sm btn-outline-secondary';
+                    hideButton.className = 'btn btn-sm btn-outline-secondary removeBTN';
                     hideButton.textContent = 'Hide';
 
                     hideButton.addEventListener('click', function () {
@@ -74,7 +74,7 @@ document.querySelector('.btn-secondary').addEventListener('click', function () {
 });
 
 
-document.querySelectorAll('.btn-outline-secondary').forEach(button => {
+document.querySelectorAll('.removeBTN').forEach(button => {
     button.addEventListener('click', function () {
         var card = this.closest('.card');
         card.style.display = 'none';
