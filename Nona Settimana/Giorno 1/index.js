@@ -30,23 +30,23 @@ class User {
         this.numeroChiamate = 0;
     }
 }
-// Crea nuovo utente
-let user = new User('Mario', 'Rossi');
+// Crea un nuovo utente
+var utente = new User("Mario","Rossi");
 
 // Ricarica il credito dell'utente
-user.ricarica(20);
+utente.ricarica(20);
 
 // Effettua una chiamata di 5 minuti
-user.chiamata(5);
+utente.chiamata(19);
 
 // Stampa il credito rimanente
-console.log(user.chiamata404()); // Dovrebbe stampare 19
+console.log( "credito residuo =", utente.chiamata404()); // Dovrebbe stampare 19 (se il costo per minuto è 0.2)
 
 // Stampa il numero di minuti in chiamata
-console.log(user.getNumeroChiamate()); // Dovrebbe stampare 5
+console.log( "minuti in chiamata =", utente.getNumeroChiamate()); // Dovrebbe stampare 5
 
-// Azzera il numero di minuti in chiamata
-user.azzeraChiamate();
+// Azzera il numero di chiamate
+utente.azzeraChiamate();
 
-// Stampa il numero di minuti in chiamata dopo l'azzeramento
-console.log(user.getNumeroChiamate()); // Dovrebbe stampare 0
+// Stampa il numero di chiamate dopo l'azzeramento
+console.log("ieri è iniziato un nuovo mese, perciò l'utente ha ora", utente.getNumeroChiamate() ,"minuti in chiamata"); // Dovrebbe stampare 0

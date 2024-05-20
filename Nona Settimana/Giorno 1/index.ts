@@ -1,11 +1,11 @@
 interface Smartphone {
     credito: number;
     numeroChiamate: number;
-    ricarica: (importo: number) => void;
-    chiamata: (minuti: number) => void;
-    chiamata404: () => number;
-    getNumeroChiamate: () => number;
-    azzeraChiamate: () => void;
+    ricarica(importo: number): void;
+    chiamata(minuti: number): void;
+    chiamata404(): number;
+    getNumeroChiamate(): number;
+    azzeraChiamate(): void;
 }
 
 class User implements Smartphone {
