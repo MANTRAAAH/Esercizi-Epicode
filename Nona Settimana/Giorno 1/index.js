@@ -37,7 +37,7 @@ var utente = new User("Mario","Rossi");
 utente.ricarica(20);
 
 // Effettua una chiamata di 5 minuti
-utente.chiamata(19);
+utente.chiamata(5);
 
 // Stampa il credito rimanente
 console.log( "credito residuo =", utente.chiamata404()); // Dovrebbe stampare 19 (se il costo per minuto è 0.2)
