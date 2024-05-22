@@ -1,4 +1,4 @@
-import { IPost } from '../models/i-post';
+import { iPost } from '../models/i-post';
 import { iData } from '../models/i-data';
 import { Component } from '@angular/core';
 
@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   dbUrl = '../../../assets/db.json';
-  postArray: IPost[] = [];
-  randomPosts: IPost[] = [];
-  featuredPost: IPost= {} as IPost;
+  postArray: iPost[] = [];
+  randomPosts: iPost[] = [];
+  featuredPost: iPost= {} as iPost;
 
   ngOnInit() {
     this.getPosts().then(() => {
@@ -26,7 +26,7 @@ export class HomeComponent {
     this.postArray = data.posts;
   }
 
-  getRandomPosts(n: number): IPost[] {
+  getRandomPosts(n: number): iPost[] {
     const randomIndices = this.getRandomIndices(n, this.postArray.length);
     return randomIndices.map(index => this.postArray[index]);
   }

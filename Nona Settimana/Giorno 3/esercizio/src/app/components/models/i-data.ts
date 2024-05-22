@@ -1,7 +1,7 @@
-import { IPost } from "../models/i-post";
+import { iPost } from "../models/i-post";
 
 export interface iData {
-  posts: IPost[]
+  posts: iPost[]
   total: number
   skip: number
   limit: number
