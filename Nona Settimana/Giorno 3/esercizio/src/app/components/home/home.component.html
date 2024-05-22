@@ -40,6 +40,21 @@
             <div class="card-body">
               <h5 class="card-title">{{ post.title }}</h5>
               <p class="card-text">{{ post.body }}</p>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary">
+                  {{ post.tags[0] }}
+                </button>
+                <button type="button" class="btn btn-primary">
+                  {{ post.tags[1] }}
+                </button>
+                <button
+                  *ngIf="post.tags[2]"
+                  type="button"
+                  class="btn btn-primary"
+                >
+                  {{ post.tags[2] }}
+                </button>
+              </div>
             </div>
           </div>
         </div>

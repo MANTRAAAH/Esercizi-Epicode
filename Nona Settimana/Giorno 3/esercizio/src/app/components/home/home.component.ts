@@ -15,7 +15,7 @@ export class HomeComponent {
 
   ngOnInit() {
     this.getPosts().then(() => {
-      this.randomPosts = this.getRandomPosts(5);
+      this.randomPosts = this.getRandomPosts(10);
       this.featuredPost = this.getRandomPosts(1)[0];
     });
   }
