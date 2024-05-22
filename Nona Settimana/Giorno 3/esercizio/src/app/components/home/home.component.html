@@ -1,0 +1,43 @@
+<main>
+  <section>
+    <h2 class="text-center">Post in evidenza</h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card text-center">
+            <div class="card-header">Featured</div>
+            <div class="card-body">
+              <h5 class="card-title">{{ featuredPost.title }}</h5>
+              <p class="card-text">
+                {{ featuredPost.body }}
+              </p>
+              <a href="#" class="btn btn-primary">Leggi di più</a>
+            </div>
+            <div class="card-footer text-body-secondary">2 days ago</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2 class="text-center">Potrebbero piacerti questi post</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4" *ngFor="let post of randomPosts">
+          <div class="card">
+            <img
+              src="https://picsum.photos/200"
+              class="img-fluid rounded-start w-100"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ post.title }}</h5>
+              <p class="card-text">{{ post.body }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
