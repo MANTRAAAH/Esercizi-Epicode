@@ -8,6 +8,7 @@ import { ActivePostsComponent } from './components/active-posts/active-posts.com
 import { InactivePostsComponent } from './components/inactive-posts/inactive-posts.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { Page404Component } from './components/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ActivePostsComponent,
     InactivePostsComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,

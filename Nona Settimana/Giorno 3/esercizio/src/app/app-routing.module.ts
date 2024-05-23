@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ActivePostsComponent } from './components/active-posts/active-posts.component';
 import { InactivePostsComponent } from './components/inactive-posts/inactive-posts.component';
 import { PostDetailComponent } from './components/post-detail/post-detail.component';
+import { Page404Component } from './components/page404/page404.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,11 @@ const routes: Routes = [
 {
   path: 'post-detail/:id',
   component: PostDetailComponent
+},
+{
+  path: '**',
+  component: Page404Component
+
 }];
 
 @NgModule({
