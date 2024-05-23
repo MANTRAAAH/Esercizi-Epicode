@@ -21,19 +21,16 @@ export class PostDetailComponent implements OnInit {
 ngOnInit(): void {
   this.route.params.subscribe((params: any) => {
     console.log(params);
-    this.showSpinner = true; // Set to true before fetch
+    this.showSpinner = true;
 
     fetch(`assets/db.json`)
       .then(response => response.json())
       .then((data: iData) => {
 
-        console.log('ID to find:', params.id); // Print the ID to find
-
-        // Try converting both IDs to the same type before comparing
+        console.log('ID to find:', params.id);
         const post = data.posts.find((p: iPost) => String(p.id) === String(params.id));
 
         if (post) {
-          // Hide the spinner and show the post after a delay
           setTimeout(() => {
             this.showSpinner = false;
             this.post = post;
