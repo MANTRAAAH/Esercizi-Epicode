@@ -14,7 +14,7 @@ ngOnInit(): void {
   fetch('../../../assets/db.json')
     .then(response => response.json())
     .then(data => {
-      this.inactivePosts = data.posts.filter((post: iPost) => post.active === false);
+      this.inactivePosts = data.posts.filter((post: iPost) => !post.active);
     });
 }
 }
