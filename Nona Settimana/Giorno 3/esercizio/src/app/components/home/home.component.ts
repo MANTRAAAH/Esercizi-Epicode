@@ -1,5 +1,6 @@
 import { iPost } from '../models/i-post';
 import { iData } from '../models/i-data';
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -12,6 +13,7 @@ export class HomeComponent {
   postArray: iPost[] = [];
   randomPosts: iPost[] = [];
   featuredPost: iPost= {} as iPost;
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.getPosts().then(() => {
@@ -19,7 +21,9 @@ export class HomeComponent {
       this.featuredPost = this.getRandomPosts(1)[0];
     });
   }
-
+  goToPostDetail(): void {
+    this.router.navigate(['/post-detail', this.featuredPost.id]);
+  }
   async getPosts(): Promise<void> {
     const response = await fetch(this.dbUrl);
     const data: iData = await response.json();

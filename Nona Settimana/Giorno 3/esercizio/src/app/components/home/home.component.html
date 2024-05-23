@@ -13,7 +13,9 @@
               <p class="card-text">
                 {{ featuredPost.body }}
               </p>
-              <a href="#" class="btn btn-primary">Leggi di più</a>
+              <button class="btn btn-secondary ms-5" (click)="goToPostDetail()">
+                Vedi dettagli
+              </button>
             </div>
             <div class="card-footer text-body-secondary">2 days ago</div>
           </div>
@@ -55,6 +57,12 @@
                   {{ post.tags[2] }}
                 </button>
               </div>
+              <button
+                class="btn btn-secondary ms-5"
+                [routerLink]="['/post-detail', post.id]"
+              >
+                Vedi dettagli
+              </button>
             </div>
           </div>
         </div>

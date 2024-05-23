@@ -1,1 +1,23 @@
-<p>inactive-posts works!</p>
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-4" *ngFor="let post of inactivePosts">
+      <div class="card mb-2">
+        <img
+          src="https://picsum.photos/200"
+          class="img-fluid rounded-start w-100"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.body }}</p>
+          <button
+            [routerLink]="['/post-detail', post.id]"
+            class="btn btn-primary"
+          >
+            Vedi dettagli
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
