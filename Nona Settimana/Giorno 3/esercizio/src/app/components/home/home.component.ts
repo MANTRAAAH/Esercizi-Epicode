@@ -1,33 +1,29 @@
-import { iPost } from '../models/i-post';
-import { iData } from '../models/i-data';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Component } from '@angular/core';
+import { iPost } from '../models/i-post';
+import { PostServiceService } from '../../services/post-service.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
-  dbUrl = '../../../assets/db.json';
+export class HomeComponent implements OnInit {
   postArray: iPost[] = [];
   randomPosts: iPost[] = [];
-  featuredPost: iPost= {} as iPost;
-  constructor(private router: Router) { }
+  featuredPost: iPost = {} as iPost;
 
-  ngOnInit() {
-    this.getPosts().then(() => {
-      this.randomPosts = this.getRandomPosts(10);
-      this.featuredPost = this.getRandomPosts(1)[0];
-    });
+  constructor(private router: Router, private postService: PostServiceService) { }
+
+  ngOnInit(): void {
+    this.postArray = this.postService.getPosts;
+    this.randomPosts = this.getRandomPosts(10);
+    this.featuredPost = this.getRandomPosts(1)[0];
   }
+
   goToPostDetail(): void {
     this.router.navigate(['/post-detail', this.featuredPost.id]);
-  }
-  async getPosts(): Promise<void> {
-    const response = await fetch(this.dbUrl);
-    const data: iData = await response.json();
-    this.postArray = data.posts;
   }
 
   getRandomPosts(n: number): iPost[] {
@@ -42,4 +38,9 @@ export class HomeComponent {
     }
     return Array.from(indices);
   }
+  onSubmit(post: iPost, form: NgForm): void {
+    post.title = form.value.title;
+    alert('Modifica salvata');
+  }
+
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { iPost } from '../models/i-post';
+import { PostServiceService } from '../../services/post-service.service';
 
 @Component({
   selector: 'app-inactive-posts',
@@ -9,12 +10,9 @@ import { iPost } from '../models/i-post';
 export class InactivePostsComponent {
   inactivePosts: iPost[] = [];
 
-  constructor() { }
+  constructor(private postService: PostServiceService) { }
+
 ngOnInit(): void {
-  fetch('../../../assets/db.json')
-    .then(response => response.json())
-    .then(data => {
-      this.inactivePosts = data.posts.filter((post: iPost) => !post.active);
-    });
+  this.inactivePosts = this.postService.getPosts.filter((post: iPost) => post.active === false);
 }
 }

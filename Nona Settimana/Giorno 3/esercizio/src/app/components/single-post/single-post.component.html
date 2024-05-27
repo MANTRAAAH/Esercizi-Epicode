@@ -1,0 +1,34 @@
+<div class="card" [ngClass]="{ 'border-primary border-3': post.active }">
+  <img
+    src="https://picsum.photos/200"
+    class="img-fluid rounded-start w-100"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ post.title }}</h5>
+    <p class="card-text">{{ post.body }}</p>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary">
+        {{ post.tags[0] }}
+      </button>
+      <button type="button" class="btn btn-primary">
+        {{ post.tags[1] }}
+      </button>
+      <button *ngIf="post.tags[2]" type="button" class="btn btn-primary">
+        {{ post.tags[2] }}
+      </button>
+    </div>
+    <button
+      class="btn btn-secondary ms-5"
+      [routerLink]="['/post-detail', post.id]"
+    >
+      Vedi dettagli
+    </button>
+    <button class="btn btn-secondary ms-2 mt-1" (click)="showForm = !showForm">
+      Modifica post
+    </button>
+    <div *ngIf="showForm">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

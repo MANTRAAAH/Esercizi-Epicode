@@ -9,6 +9,9 @@ import { InactivePostsComponent } from './components/inactive-posts/inactive-pos
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { Page404Component } from './components/page404/page404.component';
+import { SinglePostComponent } from './components/single-post/single-post.component';
+import { FormsModule } from '@angular/forms';
+import { PostServiceService } from './services/post-service.service';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import { Page404Component } from './components/page404/page404.component';
     InactivePostsComponent,
     NavbarComponent,
     FooterComponent,
-    Page404Component
+    Page404Component,
+    SinglePostComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [PostServiceService],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

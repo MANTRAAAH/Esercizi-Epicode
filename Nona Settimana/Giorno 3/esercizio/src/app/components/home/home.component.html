@@ -30,41 +30,22 @@
     <div class="container">
       <div class="row">
         <div
-          class="col-sm-2 col-md-3 col-lg-6 my-2"
-          *ngFor="let post of randomPosts"
+          *ngFor="let post of postArray"
+          class="col-md-6 my-3 col-sm-3 col-lg-4"
         >
-          <div class="card">
-            <img
-              src="https://picsum.photos/200"
-              class="img-fluid rounded-start w-100"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">{{ post.title }}</h5>
-              <p class="card-text">{{ post.body }}</p>
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-primary">
-                  {{ post.tags[0] }}
-                </button>
-                <button type="button" class="btn btn-primary">
-                  {{ post.tags[1] }}
-                </button>
-                <button
-                  *ngIf="post.tags[2]"
-                  type="button"
-                  class="btn btn-primary"
-                >
-                  {{ post.tags[2] }}
-                </button>
-              </div>
-              <button
-                class="btn btn-secondary ms-5"
-                [routerLink]="['/post-detail', post.id]"
-              >
-                Vedi dettagli
+          <app-single-post [post]="post">
+            <form (ngSubmit)="onSubmit(post, f)" #f="ngForm">
+              <input
+                type="text"
+                name="title"
+                [(ngModel)]="post.title"
+                class="form-control"
+              />
+              <button type="submit" class="btn btn-success">
+                Salva modifiche
               </button>
-            </div>
-          </div>
+            </form>
+          </app-single-post>
         </div>
       </div>
     </div>
