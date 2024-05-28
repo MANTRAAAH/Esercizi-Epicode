@@ -13,7 +13,10 @@
               <p class="card-text">
                 {{ featuredPost.body }}
               </p>
-              <button class="btn btn-secondary" (click)="goToPostDetail()">
+              <button
+                class="btn btn-secondary ms-5"
+                [routerLink]="['/post-detail', featuredPost.id]"
+              >
                 Vedi dettagli
               </button>
             </div>
@@ -27,6 +30,36 @@
     <div>
       <h2 class="text-center mb-4">Potrebbero piacerti questi post</h2>
     </div>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="row d-flex align-items-center">
+        <div class="col-2">
+          <p class="fw-bold text-uppercase pt-3">Filtra per:</p>
+        </div>
+        <div class="col-10">
+          <div class="btn-group" role="group" aria-label="Tag buttons">
+            <button
+              type="button"
+              class="btn"
+              [ngClass]="{
+                'btn-info': tag !== selectedTag,
+                'btn-success': tag === selectedTag
+              }"
+              *ngFor="let tag of tags"
+              (click)="filterPostsByTag(tag)"
+            >
+              {{ tag | uppercase }}
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              (click)="resetFilter()"
+            >
+              X
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div
@@ -34,7 +67,7 @@
           class="col-md-6 my-3 col-sm-3 col-lg-4"
         >
           <app-single-post [post]="post">
-            <form (ngSubmit)="onSubmit(post, f)" #f="ngForm">
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
               <input
                 type="text"
                 name="title"

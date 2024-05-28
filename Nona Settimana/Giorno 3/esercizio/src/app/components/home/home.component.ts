@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { iPost } from '../models/i-post';
@@ -11,36 +12,44 @@ import { NgForm } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
   postArray: iPost[] = [];
-  randomPosts: iPost[] = [];
-  featuredPost: iPost = {} as iPost;
+  selectedTag!: string
+  tags: string[] = [];
 
-  constructor(private router: Router, private postService: PostServiceService) { }
+  post!: iPost;
+  featuredPost: any;
 
+  constructor(private postService: PostServiceService, private router: Router) { }
+    //prendo i post dal service
   ngOnInit(): void {
+    this.postArray = this.postService.getPosts.slice(0, 10);
+    this.tags = this.postService.getUniqueTags(this.postArray);
+    this.featuredPost = this.postService.getOneRandom();
+  }
+
+  //modifica, per ora, solo il titolo, ma ovviamente non salva ancora internamente la modifica, aggiunto un feedback visivo
+ onSubmit(form: NgForm): void {
+  const updatedPost: iPost = {
+    ...this.post,
+    ...form.value
+  };
+  this.postService.updatePost(updatedPost);
+  alert('Modifica salvata');
+}
+
+
+
+ //prendo i tag dal servizio e filtro i post in base al tag selezionato
+  filterPostsByTag(tag: string): void {
+    this.selectedTag = tag;
+    this.postArray = this.postService.getPostsByTag(tag);
+  }
+  //resetto il filtro
+  resetFilter(): void {
+    this.selectedTag!;
     this.postArray = this.postService.getPosts;
-    this.randomPosts = this.getRandomPosts(10);
-    this.featuredPost = this.getRandomPosts(1)[0];
   }
-
-  goToPostDetail(): void {
-    this.router.navigate(['/post-detail', this.featuredPost.id]);
+    //vado al dettaglio del post tramite id
+  goToPostDetail(post: iPost): void {
+    this.router.navigate(['/post-detail', post.id]);
   }
-
-  getRandomPosts(n: number): iPost[] {
-    const randomIndices = this.getRandomIndices(n, this.postArray.length);
-    return randomIndices.map(index => this.postArray[index]);
-  }
-
-  getRandomIndices(n: number, max: number): number[] {
-    const indices = new Set<number>();
-    while (indices.size < n) {
-      indices.add(Math.floor(Math.random() * max));
-    }
-    return Array.from(indices);
-  }
-  onSubmit(post: iPost, form: NgForm): void {
-    post.title = form.value.title;
-    alert('Modifica salvata');
-  }
-
 }

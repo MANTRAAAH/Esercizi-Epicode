@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
+import { iPost } from '../components/models/i-post';
+import { NgForm } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PostServiceService {
+
+
+  // array di oggetti post
   posts= [
     {
       "id": 1,
@@ -246,9 +251,76 @@ export class PostServiceService {
       "active": true
     }
   ]
-  constructor() { }
+  postService: any;
+  router: any;
+constructor() { }
 
-  get getPosts() {
-    return this.posts;
+get getPosts() {
+  let shuffledPosts = [...this.posts];
+  for (let i = shuffledPosts.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledPosts[i], shuffledPosts[j]] = [shuffledPosts[j], shuffledPosts[i]];
   }
+  return shuffledPosts;
+}
+
+getPostsByTag(tag: string): any[] {
+  return this.posts.filter(post => post.tags.includes(tag));
+}
+
+postArray: iPost[] = [];
+tags: string[] = [];
+selectedTag!: string | null;
+
+ngOnInit(): void {
+  this.postArray = this.postService.getPosts.slice(0, 10);
+  this.tags = this.getUniqueTags(this.postArray);
+}
+getOneRandom(): iPost {
+  const randomIndex = Math.floor(Math.random() * this.posts.length);
+  return this.posts[randomIndex];
+}
+
+
+onSubmit(post: iPost, form: NgForm): void {
+  post.title = form.value.title;
+  alert('Modifica salvata');
+}
+
+getUniqueTags(posts: iPost[]): string[] {
+  const allTags = posts.reduce<string[]>((acc, post) => {
+    if (Array.isArray(post.tags)) {
+      return acc.concat(post.tags);
+    } else {
+      return acc;
+    }
+  }, []);
+  return [...new Set(allTags)];
+}
+
+filterPostsByTag(tag: string): void {
+  this.selectedTag = tag;
+  this.postArray = this.postService.getPostsByTag(tag);
+}
+
+resetFilter(): void {
+  this.selectedTag = null;
+  this.postArray = this.postService.getPosts;
+}
+getActivePosts(): iPost[] {
+  return this.posts.filter(post => post.active);
+}
+getInactivePosts(): iPost[] {
+  return this.posts.filter(post => !post.active);
+}
+getPostById(id: number): iPost | undefined {
+  return this.posts.find(post => post.id === id);
+}
+updatePost(post: iPost): void {
+  const index = this.posts.findIndex(p => p.id === post.id);
+  if (index !== -1) {
+    this.posts[index] = post;
+  }
+}
+
 }

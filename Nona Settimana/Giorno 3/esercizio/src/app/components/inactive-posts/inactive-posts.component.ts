@@ -5,14 +5,15 @@ import { PostServiceService } from '../../services/post-service.service';
 @Component({
   selector: 'app-inactive-posts',
   templateUrl: './inactive-posts.component.html',
-  styleUrl: './inactive-posts.component.scss'
+  styleUrls: ['./inactive-posts.component.scss']
 })
 export class InactivePostsComponent {
   inactivePosts: iPost[] = [];
 
   constructor(private postService: PostServiceService) { }
 
-ngOnInit(): void {
-  this.inactivePosts = this.postService.getPosts.filter((post: iPost) => post.active === false);
-}
+  ngOnInit(): void {
+      // prendo i post con la proprietà active a false dal servizio
+    this.inactivePosts = this.postService.getInactivePosts();
+  }
 }

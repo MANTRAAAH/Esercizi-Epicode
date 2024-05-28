@@ -13,8 +13,7 @@ export class SinglePostComponent implements OnInit {
   postService: any;
 
   constructor() { }
-
-  ngOnInit(): void {
+ ngOnInit(): void {
     this.active = this.postService?.active;
   }
 }

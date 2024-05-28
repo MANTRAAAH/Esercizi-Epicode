@@ -11,8 +11,8 @@ export class ActivePostsComponent implements OnInit {
   activePosts: iPost[] = [];
 
   constructor(private postService: PostServiceService) { }
-
-ngOnInit(): void {
-  this.activePosts = this.postService.getPosts.filter((post: iPost) => post.active);
-}
+  // prendo i post con la proprietà active a true dal servizio
+  ngOnInit(): void {
+    this.activePosts = this.postService.getActivePosts();
+  }
 }

@@ -12,6 +12,8 @@ import { Page404Component } from './components/page404/page404.component';
 import { SinglePostComponent } from './components/single-post/single-post.component';
 import { FormsModule } from '@angular/forms';
 import { PostServiceService } from './services/post-service.service';
+import { RandomBgDirective } from './directives/randomBg.directive';
+import { CutterPipe } from './pipes/cutter.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { PostServiceService } from './services/post-service.service';
     NavbarComponent,
     FooterComponent,
     Page404Component,
-    SinglePostComponent
+    SinglePostComponent,
+    RandomBgDirective,
+    CutterPipe
   ],
   imports: [
     BrowserModule,

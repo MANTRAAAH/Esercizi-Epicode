@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { iPost } from '../models/i-post';
-import { iData } from '../models/i-data';
+import { PostServiceService } from '../../services/post-service.service';
 
 @Component({
   selector: 'app-post-detail',
@@ -10,33 +10,24 @@ import { iData } from '../models/i-data';
 })
 export class PostDetailComponent implements OnInit {
   post!: iPost;
-  showSpinner = false;
-
-
+  showSpinner = true;
 
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private postService: PostServiceService
   ) { }
 
 ngOnInit(): void {
+  this.showSpinner = true;  // Mostra lo spinner
+
   this.route.params.subscribe((params: any) => {
-    console.log(params);
-    this.showSpinner = true;
-
-    fetch(`assets/db.json`)
-      .then(response => response.json())
-      .then((data: iData) => {
-
-        console.log('ID to find:', params.id);
-        const post = data.posts.find((p: iPost) => String(p.id) === String(params.id));
-
-        if (post) {
-          setTimeout(() => {
-            this.showSpinner = false;
-            this.post = post;
-          }, 2500);
-        }
-      });
+    setTimeout(() => {  // Aggiungi un timeout di 3 secondi
+      const post = this.postService.getPostById(+params.id);
+      if (post) {
+        this.post = post;
+      }
+      this.showSpinner = false;  // Nascondi lo spinner
+    }, 3000);
   });
 }
 }

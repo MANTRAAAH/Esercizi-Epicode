@@ -1,3 +1,4 @@
+  //interfaccia per la gestione dei post
 export interface iPost {
   id: number
   title: string

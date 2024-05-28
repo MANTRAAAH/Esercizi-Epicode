@@ -1,25 +1,20 @@
-<div
-  class="d-flex justify-content-center align-items-center vh-100"
-  *ngIf="showSpinner"
->
-  <div class="spinner-grow" role="status"></div>
-  <div class="d-flex position-absolute top-50">
-    <p>Recupero i dettagli...</p>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row d-flex justify-content-center mt-3">
-    <div class="col-6">
-      <div class="card" *ngIf="post">
-        <img
-          src="https://picsum.photos/1200"
-          class="img-fluid rounded-start"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">{{ post.title }}</h5>
-          <p class="card-text">{{ post.body }}</p>
+<div class="d-flex justify-content-center align-items-center vh-100">
+  <div *ngIf="showSpinner" class="spinner-grow" role="status"></div>
+  <div *ngIf="!showSpinner && post">
+    <div class="container">
+      <div class="row d-flex justify-content-center mt-3">
+        <div class="col-6">
+          <div class="card" *ngIf="post">
+            <img
+              src="https://picsum.photos/1200"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ post.title }}</h5>
+              <p class="card-text">{{ post.body }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

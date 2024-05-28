@@ -5,17 +5,22 @@
     alt="..."
   />
   <div class="card-body">
-    <h5 class="card-title">{{ post.title }}</h5>
-    <p class="card-text">{{ post.body }}</p>
+    <h5 class="card-title">{{ post.title | uppercase }}</h5>
+    <p [innerHTML]="post.body | cutter" class="card-text"></p>
     <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-primary">
-        {{ post.tags[0] }}
+      <button type="button" class="btn btn-primary" appRandomBg>
+        {{ post.tags[0] | uppercase }}
       </button>
-      <button type="button" class="btn btn-primary">
-        {{ post.tags[1] }}
+      <button type="button" class="btn btn-primary" appRandomBg>
+        {{ post.tags[1] | uppercase }}
       </button>
-      <button *ngIf="post.tags[2]" type="button" class="btn btn-primary">
-        {{ post.tags[2] }}
+      <button
+        *ngIf="post.tags[2]"
+        type="button"
+        class="btn btn-primary"
+        appRandomBg
+      >
+        {{ post.tags[2] | uppercase }}
       </button>
     </div>
     <button

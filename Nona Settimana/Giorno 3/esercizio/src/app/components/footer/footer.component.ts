@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+  // data del footer dinamica implementata con pipe
+ now:Date = new Date();
 }
