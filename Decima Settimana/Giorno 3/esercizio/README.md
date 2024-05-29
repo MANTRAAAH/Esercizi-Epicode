@@ -1,5 +1,9 @@
 # Esercizio
 
+IF YOU DON'T SEE PRODUCTS, I USED A DB.JSON HOSTED WITH JSON-SERVER, SO IF U WANT TO TRY THIS, JUST INSTALL IT, OF COURSE INSTALL ANGULAR AND IF NEEDED BOOTSTRAP
+
+SORRY IM NOT THAT GOOD
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
 ## Development server
