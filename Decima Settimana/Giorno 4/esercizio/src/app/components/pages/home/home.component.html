@@ -1,0 +1,22 @@
+<main>
+  <section class="position-fixed z-1 bg-body-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Total likes: {{ likes }}</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row">
+      <app-single-photo
+        *ngFor="let photo of photos"
+        [photo]="photo"
+        (photoDeleted)="onPhotoDeleted($event)"
+        class="col-4 my-2"
+      ></app-single-photo>
+    </div>
+  </div>
+</main>
