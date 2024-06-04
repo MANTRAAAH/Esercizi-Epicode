@@ -1,0 +1,176 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="w-50">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input
+        type="text"
+        id="nome"
+        formControlName="nome"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          registrationForm.controls.nome.invalid &&
+          (registrationForm.controls.nome.dirty ||
+            registrationForm.controls.nome.touched)
+        "
+      >
+        <span *ngIf="registrationForm.controls.nome.errors.required"
+          >Nome è richiesto.</span
+        >
+        <span *ngIf="registrationForm.controls.nome.errors.minLength"
+          >Nome deve avere almeno 2 caratteri.</span
+        >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="cognome">Cognome</label>
+      <input
+        type="text"
+        id="cognome"
+        formControlName="cognome"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          registrationForm.controls.cognome.invalid &&
+          (registrationForm.controls.cognome.dirty ||
+            registrationForm.controls.cognome.touched)
+        "
+      >
+        <span *ngIf="registrationForm.controls.cognome.errors.required"
+          >Cognome è richiesto.</span
+        >
+        <span *ngIf="registrationForm.controls.cognome.errors.minLength"
+          >Cognome deve avere almeno 2 caratteri.</span
+        >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          registrationForm.controls.password.invalid &&
+          (registrationForm.controls.password.dirty ||
+            registrationForm.controls.password.touched)
+        "
+      >
+        <span *ngIf="registrationForm.controls.password.errors.required"
+          >Password è richiesta.</span
+        >
+        <span *ngIf="registrationForm.controls.password.errors.minLength"
+          >Password deve avere almeno 8 caratteri.</span
+        >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="confermaPassword">Conferma Password</label>
+      <input
+        type="password"
+        id="confermaPassword"
+        formControlName="confermaPassword"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          registrationForm.controls.confermaPassword.invalid &&
+          (registrationForm.controls.confermaPassword.dirty ||
+            registrationForm.controls.confermaPassword.touched)
+        "
+      >
+        <span *ngIf="registrationForm.controls.confermaPassword.errors.required"
+          >Conferma Password è richiesta.</span
+        >
+        <span
+          *ngIf="registrationForm.controls.confermaPassword.errors.minLength"
+          >Conferma Password deve avere almeno 8 caratteri.</span
+        >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="genere">Genere</label>
+      <select id="genere" formControlName="genere" class="form-control">
+        <option value="">Seleziona il genere</option>
+        <option value="maschio">Maschio</option>
+        <option value="femmina">Femmina</option>
+      </select>
+      <div
+        *ngIf="
+          registrationForm.controls.genere.invalid &&
+          (registrationForm.controls.genere.dirty ||
+            registrationForm.controls.genere.touched)
+        "
+      >
+        <span *ngIf="registrationForm.controls.genere.errors.required"
+          >Genere è richiesto.</span
+        >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="biografia">Biografia</label>
+      <textarea
+        id="biografia"
+        formControlName="biografia"
+        class="form-control"
+      ></textarea>
+      <div
+        *ngIf="
+          registrationForm.controls.biografia.invalid &&
+          (registrationForm.controls.biografia.dirty ||
+            registrationForm.controls.biografia.touched)
+        "
+      >
+        <span *ngIf="registrationForm.controls.biografia.errors.required"
+          >Biografia è richiesta.</span
+        >
+        <span *ngIf="registrationForm.controls.biografia.errors.maxLength"
+          >Biografia non può superare i 500 caratteri.</span
+        >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        formControlName="username"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          registrationForm.controls.username.invalid &&
+          (registrationForm.controls.username.dirty ||
+            registrationForm.controls.username.touched)
+        "
+      >
+        <span *ngIf="registrationForm.controls.username.errors.required"
+          >Username è richiesto.</span
+        >
+        <span *ngIf="registrationForm.controls.username.errors.pattern"
+          >Username non valido. Può contenere solo lettere, numeri, underscore e
+          trattini, e deve essere lungo tra 8 e 20 caratteri.</span
+        >
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-primary"
+      [disabled]="registrationForm.invalid"
+    >
+      Registrati
+    </button>
+  </form>
+</div>
