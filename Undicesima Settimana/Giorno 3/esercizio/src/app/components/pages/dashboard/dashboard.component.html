@@ -1,0 +1,13 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="row text-center">
+    <div class="col-12">
+      <h1>Pannello di Controllo</h1>
+
+      <h3>Benvenuto {{ user.name }}</h3>
+
+      <h4>La tua email è: {{ user.email }}</h4>
+
+      <button (click)="logout()" class="btn btn-primary">Fai logout</button>
+    </div>
+  </div>
+</div>

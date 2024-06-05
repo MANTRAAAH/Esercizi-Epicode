@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "email": "nygufateny@mailinator.com",
+      "password": "$2a$10$acSmXaytbNEJbjZI2D67fu0PtUquspQ25a70/pKybqVQTQ0ILu/Dq",
+      "name": "Georgia Slater",
+      "id": 1
+    },
+    {
+      "email": "xuwomo@mailinator.com",
+      "password": "$2a$10$eigDIGSlwOQihw2oQt6bze0NterundVmZBwhINX0ZTo2Hu9jCzbDm",
+      "name": "Noel Combs",
+      "id": 2
+    },
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$YCZVpUx1tS.jBsuXOyHAIemXAv2II4eYhmTH/hUQB/Yh0XIgDR41W",
+      "name": "admin",
+      "id": 3
+    }
+  ]
+}

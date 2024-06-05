@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center">Registrati</h2>
+      <form>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          [(ngModel)]="newUser.name"
+          placeholder="Inserisci il tuo username"
+        />
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          [(ngModel)]="newUser.email"
+          placeholder="Inserisci la tua email"
+        />
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          [(ngModel)]="newUser.password"
+          placeholder="Inserisci la tua password"
+        />
+        <button (click)="signup()" class="btn btn-primary">Registrati</button>
+      </form>
+    </div>
+  </div>
+</div>

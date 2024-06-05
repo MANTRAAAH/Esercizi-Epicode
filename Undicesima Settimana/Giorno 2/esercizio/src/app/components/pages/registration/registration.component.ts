@@ -18,11 +18,11 @@ export class RegistrationComponent {
 this.registrationForm = this.fb.group({
   nome: ['', [Validators.required, Validators.minLength(2)]],
   cognome: ['', [Validators.required, Validators.minLength(2)]],
-  password: ['', [Validators.required, Validators.minLength(8)]],
-  confermaPassword: ['', [Validators.required, Validators.minLength(8)]],
+  password: ['', [Validators.required]],
+  confermaPassword: ['', [Validators.required]],
   genere: ['', Validators.required],
-  biografia: ['', [Validators.required, Validators.maxLength(500)]],
-  username: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9_-]{8,20}$/)]],
+  biografia: ['', [Validators.required, Validators.maxLength(100)]],
+  username: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9_-]{4,20}$/)]],
 });
   }
 
