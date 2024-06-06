@@ -1,0 +1,21 @@
+<div>
+  <label for="email">Email:</label>
+  <input
+    type="email"
+    id="email"
+    [(ngModel)]="AuthData.email"
+    placeholder="Enter your email"
+  />
+</div>
+
+<div>
+  <label for="password">Password:</label>
+  <input
+    type="password"
+    id="password"
+    [(ngModel)]="AuthData.password"
+    placeholder="Enter your password"
+  />
+</div>
+
+<button (click)="login()">Login</button>

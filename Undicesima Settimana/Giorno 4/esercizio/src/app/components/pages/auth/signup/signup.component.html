@@ -1,0 +1,37 @@
+<p>signup works!</p>
+<div>
+  <h2>Registration Page</h2>
+  <form>
+    <div>
+      <input
+        type="text"
+        id="name"
+        [(ngModel)]="newUser.nome"
+        name="name"
+        placeholder="inserisci il tuo nome"
+        class="form-control mt-2"
+      />
+    </div>
+    <div>
+      <input
+        type="email"
+        id="email"
+        [(ngModel)]="newUser.email"
+        name="email"
+        placeholder="inserisci la tua email"
+        class="form-control mt-3"
+      />
+    </div>
+    <div>
+      <input
+        type="password"
+        id="password"
+        [(ngModel)]="newUser.password"
+        name="password"
+        placeholder="inserisci la tua password"
+        class="form-control mt-3"
+      />
+    </div>
+    <button (click)="signup()" class="btn btn-primary">Sign Up</button>
+  </form>
+</div>
