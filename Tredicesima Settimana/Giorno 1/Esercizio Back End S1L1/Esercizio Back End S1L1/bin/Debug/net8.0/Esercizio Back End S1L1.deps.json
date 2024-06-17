@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Esercizio Back End S1L1/1.0.0": {
+        "runtime": {
+          "Esercizio Back End S1L1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Esercizio Back End S1L1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
