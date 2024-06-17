@@ -1,3 +1,11 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$enR5UZ3L09lYfH2J2sR4FubN.Gb4qooH.13RaAt4XnvtEv/E2KD/e",
+      "nome": "admin",
+      "id": 1
+    }
+  ],
+  "groups": []
 }
