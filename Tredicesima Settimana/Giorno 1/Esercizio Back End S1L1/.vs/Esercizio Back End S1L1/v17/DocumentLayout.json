@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|c:\\users\\worka\\iclouddrive\\coding\\epicode\\esercizi-epicode\\tredicesima settimana\\giorno 1\\esercizio back end s1l1\\esercizio back end s1l1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|solutionrelative:esercizio back end s1l1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|c:\\users\\worka\\iclouddrive\\coding\\epicode\\esercizi-epicode\\tredicesima settimana\\giorno 1\\esercizio back end s1l1\\esercizio back end s1l1\\animale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|solutionrelative:esercizio back end s1l1\\animale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|c:\\users\\worka\\iclouddrive\\coding\\epicode\\esercizi-epicode\\tredicesima settimana\\giorno 1\\esercizio back end s1l1\\esercizio back end s1l1\\atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|solutionrelative:esercizio back end s1l1\\atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|c:\\users\\worka\\iclouddrive\\coding\\epicode\\esercizi-epicode\\tredicesima settimana\\giorno 1\\esercizio back end s1l1\\esercizio back end s1l1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|solutionrelative:esercizio back end s1l1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|c:\\users\\worka\\iclouddrive\\coding\\epicode\\esercizi-epicode\\tredicesima settimana\\giorno 1\\esercizio back end s1l1\\esercizio back end s1l1\\veicolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|solutionrelative:esercizio back end s1l1\\veicolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|c:\\users\\worka\\iclouddrive\\coding\\epicode\\esercizi-epicode\\tredicesima settimana\\giorno 1\\esercizio back end s1l1\\esercizio back end s1l1\\animale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|solutionrelative:esercizio back end s1l1\\animale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{978A06F9-F132-4518-B50B-B5DC88209F83}|Esercizio Back End S1L1\\Esercizio Back End S1L1.csproj|c:\\users\\worka\\iclouddrive\\coding\\epicode\\esercizi-epicode\\tredicesima settimana\\giorno 1\\esercizio back end s1l1\\esercizio back end s1l1\\dipendente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,32 +30,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Veicolo.cs",
               "DocumentMoniker": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Veicolo.cs",
               "RelativeDocumentMoniker": "Esercizio Back End S1L1\\Veicolo.cs",
               "ToolTip": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Veicolo.cs",
               "RelativeToolTip": "Esercizio Back End S1L1\\Veicolo.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAswBEAAABQAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAswBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T11:58:50.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Animale.cs",
-              "DocumentMoniker": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Animale.cs",
-              "RelativeDocumentMoniker": "Esercizio Back End S1L1\\Animale.cs",
-              "ToolTip": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Animale.cs",
-              "RelativeToolTip": "Esercizio Back End S1L1\\Animale.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAowA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T11:58:40.605Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -69,30 +57,43 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T11:58:28.153Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Animale.cs",
+              "DocumentMoniker": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Animale.cs",
+              "RelativeDocumentMoniker": "Esercizio Back End S1L1\\Animale.cs",
+              "ToolTip": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Animale.cs",
+              "RelativeToolTip": "Esercizio Back End S1L1\\Animale.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAowA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T11:58:40.605Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Atleta.cs",
               "DocumentMoniker": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Atleta.cs",
               "RelativeDocumentMoniker": "Esercizio Back End S1L1\\Atleta.cs",
-              "ToolTip": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Atleta.cs",
-              "RelativeToolTip": "Esercizio Back End S1L1\\Atleta.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBAAAABhAAAA",
+              "ToolTip": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Atleta.cs*",
+              "RelativeToolTip": "Esercizio Back End S1L1\\Atleta.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T11:58:03.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Program.cs",
               "RelativeDocumentMoniker": "Esercizio Back End S1L1\\Program.cs",
               "ToolTip": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 1\\Esercizio Back End S1L1\\Esercizio Back End S1L1\\Program.cs",
               "RelativeToolTip": "Esercizio Back End S1L1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T11:57:17.592Z",
               "EditorCaption": ""

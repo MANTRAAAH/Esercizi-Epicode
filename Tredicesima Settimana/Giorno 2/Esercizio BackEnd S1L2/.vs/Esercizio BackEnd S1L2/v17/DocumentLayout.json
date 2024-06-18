@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 2\\Esercizio BackEnd S1L2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5581878B-1B2F-4710-9E52-95FE20EE663B}|Esercizio BackEnd S1L2\\Esercizio BackEnd S1L2.csproj|c:\\users\\worka\\iclouddrive\\coding\\epicode\\esercizi-epicode\\tredicesima settimana\\giorno 2\\esercizio backend s1l2\\esercizio backend s1l2\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5581878B-1B2F-4710-9E52-95FE20EE663B}|Esercizio BackEnd S1L2\\Esercizio BackEnd S1L2.csproj|solutionrelative:esercizio backend s1l2\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5581878B-1B2F-4710-9E52-95FE20EE663B}|Esercizio BackEnd S1L2\\Esercizio BackEnd S1L2.csproj|c:\\users\\worka\\iclouddrive\\coding\\epicode\\esercizi-epicode\\tredicesima settimana\\giorno 2\\esercizio backend s1l2\\esercizio backend s1l2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5581878B-1B2F-4710-9E52-95FE20EE663B}|Esercizio BackEnd S1L2\\Esercizio BackEnd S1L2.csproj|solutionrelative:esercizio backend s1l2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 2\\Esercizio BackEnd S1L2\\Esercizio BackEnd S1L2\\Persona.cs",
+              "RelativeDocumentMoniker": "Esercizio BackEnd S1L2\\Persona.cs",
+              "ToolTip": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 2\\Esercizio BackEnd S1L2\\Esercizio BackEnd S1L2\\Persona.cs",
+              "RelativeToolTip": "Esercizio BackEnd S1L2\\Persona.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:36:29.816Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 2\\Esercizio BackEnd S1L2\\Esercizio BackEnd S1L2\\Program.cs",
+              "RelativeDocumentMoniker": "Esercizio BackEnd S1L2\\Program.cs",
+              "ToolTip": "C:\\Users\\worka\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 2\\Esercizio BackEnd S1L2\\Esercizio BackEnd S1L2\\Program.cs",
+              "RelativeToolTip": "Esercizio BackEnd S1L2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:36:10.77Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

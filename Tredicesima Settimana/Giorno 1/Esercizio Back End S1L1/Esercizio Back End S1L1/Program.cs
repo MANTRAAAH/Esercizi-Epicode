@@ -7,7 +7,7 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            Atleta calciatore = new Atleta(); //new Atleta{Nome="Sandro",Età=19,Sport="Calcio"};
+            Atleta calciatore = new (); //new {Nome="Sandro",Età=19,Sport="Calcio"};
             calciatore.Età = 19;
             calciatore.Nome = "Sandro";
             calciatore.Sport = "Calcio";
