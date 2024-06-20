@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Esercizio_BackEnd_S1L3
 {
@@ -10,12 +6,13 @@ namespace Esercizio_BackEnd_S1L3
     {
         private bool _isAttivo;
         private decimal _saldo;
-
-        public ContoCorrente()
+        private string _nomeTitolare;
+       
+        public ContoCorrente(string nomeTitolare)
         {
             _isAttivo = false;
             _saldo = 0;
-            
+            _nomeTitolare = nomeTitolare; 
         }
 
         public void AttivaConto(decimal primoVersamento)
@@ -24,13 +21,12 @@ namespace Esercizio_BackEnd_S1L3
             {
                 _isAttivo = true;
                 _saldo += primoVersamento;
-                Console.WriteLine("Conto attivato con successo");
+                Console.WriteLine($"Conto attivato con successo a nome di {_nomeTitolare}");
             }
             else
             {
                 Console.WriteLine("Conto non attivato");
             }
-
         }
 
         public void Versa(decimal importo)
@@ -44,7 +40,6 @@ namespace Esercizio_BackEnd_S1L3
             {
                 Console.WriteLine("Conto non attivo");
             }
-
         }
 
         public void Preleva(decimal importo)
@@ -63,10 +58,10 @@ namespace Esercizio_BackEnd_S1L3
                 Console.WriteLine("Saldo insufficiente");
             }
         }
+
         public void visualizzaSaldo()
         {
             Console.WriteLine($"Il saldo attuale è di {_saldo}");
         }
     }
- 
 }

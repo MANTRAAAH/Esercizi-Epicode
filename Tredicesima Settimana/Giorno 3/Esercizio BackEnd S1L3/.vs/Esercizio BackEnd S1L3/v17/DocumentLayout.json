@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\antan\\Desktop\\Esercizio BackEnd S1L3\\",
+  "WorkspaceRootPath": "D:\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 3\\Esercizio BackEnd S1L3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E0D78D8-42C9-4ADE-A0CB-03334258FBFB}|Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3.csproj|c:\\users\\antan\\desktop\\esercizio backend s1l3\\esercizio backend s1l3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0D78D8-42C9-4ADE-A0CB-03334258FBFB}|Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3.csproj|solutionrelative:esercizio backend s1l3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E0D78D8-42C9-4ADE-A0CB-03334258FBFB}|Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3.csproj|d:\\iclouddrive\\coding\\epicode\\esercizi-epicode\\esercizi-epicode\\tredicesima settimana\\giorno 3\\esercizio backend s1l3\\esercizio backend s1l3\\contocorrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0D78D8-42C9-4ADE-A0CB-03334258FBFB}|Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3.csproj|solutionrelative:esercizio backend s1l3\\contocorrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E0D78D8-42C9-4ADE-A0CB-03334258FBFB}|Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3.csproj|c:\\users\\antan\\desktop\\esercizio backend s1l3\\esercizio backend s1l3\\contocorrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0D78D8-42C9-4ADE-A0CB-03334258FBFB}|Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3.csproj|solutionrelative:esercizio backend s1l3\\contocorrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E0D78D8-42C9-4ADE-A0CB-03334258FBFB}|Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3.csproj|d:\\iclouddrive\\coding\\epicode\\esercizi-epicode\\esercizi-epicode\\tredicesima settimana\\giorno 3\\esercizio backend s1l3\\esercizio backend s1l3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0D78D8-42C9-4ADE-A0CB-03334258FBFB}|Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3.csproj|solutionrelative:esercizio backend s1l3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,29 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ContoCorrente.cs",
-              "DocumentMoniker": "C:\\Users\\antan\\Desktop\\Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3\\ContoCorrente.cs",
+              "DocumentMoniker": "D:\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 3\\Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3\\ContoCorrente.cs",
               "RelativeDocumentMoniker": "Esercizio BackEnd S1L3\\ContoCorrente.cs",
-              "ToolTip": "C:\\Users\\antan\\Desktop\\Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3\\ContoCorrente.cs",
+              "ToolTip": "D:\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 3\\Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3\\ContoCorrente.cs",
               "RelativeToolTip": "Esercizio BackEnd S1L3\\ContoCorrente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T07:24:29.722Z"
+              "WhenOpened": "2024-06-19T07:24:29.722Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\antan\\Desktop\\Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3\\Program.cs",
+              "DocumentMoniker": "D:\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 3\\Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3\\Program.cs",
               "RelativeDocumentMoniker": "Esercizio BackEnd S1L3\\Program.cs",
-              "ToolTip": "C:\\Users\\antan\\Desktop\\Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3\\Program.cs",
+              "ToolTip": "D:\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 3\\Esercizio BackEnd S1L3\\Esercizio BackEnd S1L3\\Program.cs",
               "RelativeToolTip": "Esercizio BackEnd S1L3\\Program.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwDgAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T06:47:25.947Z",
               "EditorCaption": ""

@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            ContoCorrente conto = new ContoCorrente();
+            ContoCorrente conto = new ContoCorrente("Pippo");
             conto.AttivaConto(1000);
             conto.Versa(500);
             conto.Preleva(200);
@@ -51,12 +51,11 @@
             {
                 numeri[i] = i+1;
             //  numeri[i] = i * moltiplicazione;
-                Console.WriteLine(numeri[i]);
             }
 
              void somma_media(int[] numeri)
             {
-                int somma = 0;
+                long somma = 0;
                 for (int i = 0; i < numeri.Length; i++)
                 {
                     somma += numeri[i];

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Esercizio BackEnd S1L3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9edca87117ce24befc117c6b50d88e7c7d230127")]
 [assembly: System.Reflection.AssemblyProductAttribute("Esercizio BackEnd S1L3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Esercizio BackEnd S1L3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
