@@ -1,0 +1,15 @@
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\bin\Debug\net8.0\Esercizio BackEnd.exe
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\bin\Debug\net8.0\Esercizio BackEnd.deps.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\bin\Debug\net8.0\Esercizio BackEnd.runtimeconfig.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\bin\Debug\net8.0\Esercizio BackEnd.dll
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\bin\Debug\net8.0\Esercizio BackEnd.pdb
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\obj\Debug\net8.0\Esercizio BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\obj\Debug\net8.0\Esercizio BackEnd.AssemblyInfoInputs.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\obj\Debug\net8.0\Esercizio BackEnd.AssemblyInfo.cs
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\obj\Debug\net8.0\Esercizio BackEnd.csproj.CoreCompileInputs.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\obj\Debug\net8.0\Esercizio BackEnd.sourcelink.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\obj\Debug\net8.0\Esercizio BackEnd.dll
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\obj\Debug\net8.0\refint\Esercizio BackEnd.dll
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\obj\Debug\net8.0\Esercizio BackEnd.pdb
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\obj\Debug\net8.0\Esercizio BackEnd.genruntimeconfig.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Tredicesima Settimana\Giorno 4\Esercizio BackEnd\Esercizio BackEnd\obj\Debug\net8.0\ref\Esercizio BackEnd.dll

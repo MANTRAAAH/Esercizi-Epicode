@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 4\\Esercizio BackEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15B2D4D7-38DE-4649-B45D-ABBBF6CE4B40}|Esercizio BackEnd\\Esercizio BackEnd.csproj|d:\\iclouddrive\\coding\\epicode\\esercizi-epicode\\esercizi-epicode\\tredicesima settimana\\giorno 4\\esercizio backend\\esercizio backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15B2D4D7-38DE-4649-B45D-ABBBF6CE4B40}|Esercizio BackEnd\\Esercizio BackEnd.csproj|solutionrelative:esercizio backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15B2D4D7-38DE-4649-B45D-ABBBF6CE4B40}|Esercizio BackEnd\\Esercizio BackEnd.csproj|d:\\iclouddrive\\coding\\epicode\\esercizi-epicode\\esercizi-epicode\\tredicesima settimana\\giorno 4\\esercizio backend\\esercizio backend\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15B2D4D7-38DE-4649-B45D-ABBBF6CE4B40}|Esercizio BackEnd\\Esercizio BackEnd.csproj|solutionrelative:esercizio backend\\utente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Utente.cs",
+              "DocumentMoniker": "D:\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 4\\Esercizio BackEnd\\Esercizio BackEnd\\Utente.cs",
+              "RelativeDocumentMoniker": "Esercizio BackEnd\\Utente.cs",
+              "ToolTip": "D:\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 4\\Esercizio BackEnd\\Esercizio BackEnd\\Utente.cs",
+              "RelativeToolTip": "Esercizio BackEnd\\Utente.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAmwAkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T09:22:04.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 4\\Esercizio BackEnd\\Esercizio BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "Esercizio BackEnd\\Program.cs",
+              "ToolTip": "D:\\iCloudDrive\\Coding\\Epicode\\Esercizi-Epicode\\Esercizi-Epicode\\Tredicesima Settimana\\Giorno 4\\Esercizio BackEnd\\Esercizio BackEnd\\Program.cs",
+              "RelativeToolTip": "Esercizio BackEnd\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T09:21:37.079Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
