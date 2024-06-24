@@ -1,0 +1,31 @@
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\bin\Debug\net8.0\appsettings.Development.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\bin\Debug\net8.0\appsettings.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\bin\Debug\net8.0\Addenda W1D2.staticwebassets.runtime.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\bin\Debug\net8.0\Addenda W1D2.exe
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\bin\Debug\net8.0\Addenda W1D2.deps.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\bin\Debug\net8.0\Addenda W1D2.runtimeconfig.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\bin\Debug\net8.0\Addenda W1D2.dll
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\bin\Debug\net8.0\Addenda W1D2.pdb
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.GeneratedMSBuildEditorConfig.editorconfig
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.AssemblyInfoInputs.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.AssemblyInfo.cs
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.csproj.CoreCompileInputs.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.MvcApplicationPartsAssemblyInfo.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.RazorAssemblyInfo.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.RazorAssemblyInfo.cs
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.sourcelink.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\staticwebassets.build.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\staticwebassets.development.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\staticwebassets\msbuild.Addenda W1D2.Microsoft.AspNetCore.StaticWebAssets.props
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\staticwebassets\msbuild.build.Addenda W1D2.props
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Addenda W1D2.props
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Addenda W1D2.props
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\staticwebassets.pack.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\scopedcss\bundle\Addenda W1D2.styles.css
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\scopedcss\projectbundle\Addenda W1D2.bundle.scp.css
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.dll
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\refint\Addenda W1D2.dll
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.pdb
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\Addenda W1D2.genruntimeconfig.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Addenda W1D2\Addenda W1D2\obj\Debug\net8.0\ref\Addenda W1D2.dll

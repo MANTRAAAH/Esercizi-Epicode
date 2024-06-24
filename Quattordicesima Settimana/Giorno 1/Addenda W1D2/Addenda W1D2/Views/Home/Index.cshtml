@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Menu Page";
+
+}
+    @model Addenda_W1D2.Models.Menu
+
+
+<div class="text-center">
+    <h1 class="display-4">Benvenuto Nel Nostro Ristorante</h1>
+</div>
+
+
+
+<div class="text-center">
+    <h1>MENU</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Dai un'occhiata ;)</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Prezzo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td class="align-middle"><img src="https://place-hold.it/1000" alt="Immagine" style="width: 100px" class="shadow-sm rounded-circle"></td>
+                    <td class="align-middle text-decoration-underline ">@item.Name</td>
+                    <td class="align-middle"> <button class="btn btn-outline-success shadow-lg">€ @item.Price</button></td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+

@@ -1,0 +1,15 @@
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\bin\Debug\net8.0\Backend W2_D1.exe
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\bin\Debug\net8.0\Backend W2_D1.deps.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\bin\Debug\net8.0\Backend W2_D1.runtimeconfig.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\bin\Debug\net8.0\Backend W2_D1.dll
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\bin\Debug\net8.0\Backend W2_D1.pdb
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\obj\Debug\net8.0\Backend W2_D1.GeneratedMSBuildEditorConfig.editorconfig
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\obj\Debug\net8.0\Backend W2_D1.AssemblyInfoInputs.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\obj\Debug\net8.0\Backend W2_D1.AssemblyInfo.cs
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\obj\Debug\net8.0\Backend W2_D1.csproj.CoreCompileInputs.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\obj\Debug\net8.0\Backend W2_D1.sourcelink.json
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\obj\Debug\net8.0\Backend W2_D1.dll
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\obj\Debug\net8.0\refint\Backend W2_D1.dll
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\obj\Debug\net8.0\Backend W2_D1.pdb
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\obj\Debug\net8.0\Backend W2_D1.genruntimeconfig.cache
+D:\iCloudDrive\Coding\Epicode\Esercizi-Epicode\Esercizi-Epicode\Quattordicesima Settimana\Giorno 1\Backend W2_D1\Backend W2_D1\obj\Debug\net8.0\ref\Backend W2_D1.dll
