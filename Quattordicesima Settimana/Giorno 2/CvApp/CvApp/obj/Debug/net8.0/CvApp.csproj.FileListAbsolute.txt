@@ -1,0 +1,14 @@
+C:\Users\antan\Desktop\CvApp\CvApp\bin\Debug\net8.0\CvApp.exe
+C:\Users\antan\Desktop\CvApp\CvApp\bin\Debug\net8.0\CvApp.deps.json
+C:\Users\antan\Desktop\CvApp\CvApp\bin\Debug\net8.0\CvApp.runtimeconfig.json
+C:\Users\antan\Desktop\CvApp\CvApp\bin\Debug\net8.0\CvApp.dll
+C:\Users\antan\Desktop\CvApp\CvApp\bin\Debug\net8.0\CvApp.pdb
+C:\Users\antan\Desktop\CvApp\CvApp\obj\Debug\net8.0\CvApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antan\Desktop\CvApp\CvApp\obj\Debug\net8.0\CvApp.AssemblyInfoInputs.cache
+C:\Users\antan\Desktop\CvApp\CvApp\obj\Debug\net8.0\CvApp.AssemblyInfo.cs
+C:\Users\antan\Desktop\CvApp\CvApp\obj\Debug\net8.0\CvApp.csproj.CoreCompileInputs.cache
+C:\Users\antan\Desktop\CvApp\CvApp\obj\Debug\net8.0\CvApp.dll
+C:\Users\antan\Desktop\CvApp\CvApp\obj\Debug\net8.0\refint\CvApp.dll
+C:\Users\antan\Desktop\CvApp\CvApp\obj\Debug\net8.0\CvApp.pdb
+C:\Users\antan\Desktop\CvApp\CvApp\obj\Debug\net8.0\CvApp.genruntimeconfig.cache
+C:\Users\antan\Desktop\CvApp\CvApp\obj\Debug\net8.0\ref\CvApp.dll

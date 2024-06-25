@@ -1,0 +1,56 @@
+﻿@model CV
+
+<div class="container">
+    <h1 class="mb-4 text-center">Curriculum Vitae</h1>
+    <div class="card mb-3">
+        <div class="card-header text-center">
+            <h2>Informazioni personali</h2>
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <p>Nome: @Model.InformazioniPersonali.Nome</p>
+                    <p>Cognome: @Model.InformazioniPersonali.Cognome</p>
+                    <p>Numero Di Telefono: @Model.InformazioniPersonali.Telefono</p>
+                    <p>Indirizzo E-Mail: @Model.InformazioniPersonali.Email</p>
+                </div>
+                <img src="@Model.InformazioniPersonali.imgUrl" alt="Alternate Text" style="max-width: 100px; height: auto;" />
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header text-center">
+            <h2>Esperienze lavorative</h2>
+        </div>
+        <ul class="list-group list-group-flush">
+            @foreach (var esperienza in Model.Impieghi)
+            {
+                <li class="list-group-item">
+                    <p>Nome azienda: @esperienza.Esperienza.Azienda</p>
+                    <p>Posizione: @esperienza.Esperienza.JobTitle</p>
+                    <p>Descrizione: @esperienza.Esperienza.Descrizione</p>
+                    <p>Compiti: @esperienza.Esperienza.Compiti</p>
+                    <p>Data inizio: dal <span class="font-monospace">@esperienza.Esperienza.Dal.ToShortDateString()</span> al <span class="font-monospace">@esperienza.Esperienza.Al.ToShortDateString()</span></p>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="card-header text-center">
+            <h2>Formazione</h2>
+        </div>
+        <ul class="list-group list-group-flush">
+            @foreach (var formazione in Model.StudiEffettuati)
+            {
+                <li class="list-group-item">
+                    <p>Titolo: @formazione.Qualifica</p>
+                    <p>Istituto: @formazione.Istituto</p>
+                    <p>Tipo di Istruzione: @formazione.Tipo</p>
+                    <p>Data inizio: dal <span class="font-monospace"> @formazione.Dal.ToShortDateString()</span> al <span class="font-monospace">@formazione.Al.ToShortDateString()</span></p>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
