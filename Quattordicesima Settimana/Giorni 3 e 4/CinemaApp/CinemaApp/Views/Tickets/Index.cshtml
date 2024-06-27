@@ -1,0 +1,115 @@
+﻿@model CinemaApp.Models.Ticket
+@{
+    ViewData["Title"] = "Prenota un biglietto";
+}
+
+<div class="container shadow-lg pb-4 px-3 bg-light rounded mt-5">
+    <h2 class="text-center text-primary my-4">Prenota un biglietto</h2>
+    <form asp-action="Prenota" method="post" class="needs-validation" novalidate>
+        <div class="form-group mb-3">
+            <label asp-for="Nome" class="control-label"></label>
+            <input type="text" class="form-control" id="Nome" name="Nome" required />
+            <div class="invalid-feedback">
+                Per favore, inserisci il tuo nome.
+            </div>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Cognome" class="control-label"></label>
+            <input type="text" class="form-control" id="Cognome" name="Cognome" required />
+            <div class="invalid-feedback">
+                Per favore, inserisci il tuo cognome.
+            </div>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Sala" class="control-label"></label>
+            <select class="form-control" id="Sala" name="Sala" required>
+                <option value="SALA NORD">SALA NORD</option>
+                <option value="SALA EST">SALA EST</option>
+                <option value="SALA SUD">SALA SUD</option>
+            </select>
+            <div class="invalid-feedback">
+                Per favore, seleziona una sala.
+            </div>
+        </div>
+        <div class="form-group mb-4">
+            <label asp-for="TipoBiglietto" class="control-label"></label>
+            <select class="form-control" id="TipoBiglietto" name="TipoBiglietto" required>
+                <option value="Intero">Intero</option>
+                <option value="Ridotto">Ridotto</option>
+            </select>
+            <div class="invalid-feedback">
+                Per favore, seleziona il tipo di biglietto.
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg mt-4 px-5">Prenota</button>
+        </div>
+    </form>
+    @if (TempData["Errore"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["Errore"]
+        </div>
+    }
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger mt-3">
+            @ViewData.ModelState.Values.SelectMany(v => v.Errors).FirstOrDefault()?.ErrorMessage
+        </div>
+    }
+
+    <h3 class="mt-5 text-primary">Biglietti Venduti</h3>
+    <div class="container">
+        <table class="table table-striped table-bordered">
+            <thead class="table-primary">
+                <tr>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Sala</th>
+                    <th>Tipo di Biglietto</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var ticket in ViewBag.Tickets)
+                {
+                    <tr>
+                        <td>@ticket.Nome</td>
+                        <td>@ticket.Cognome</td>
+                        <td>@ticket.Sala</td>
+                        <td>@ticket.TipoBiglietto</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="mt-5 text-primary">Capienza Sale</h3>
+    <ul class="list-group">
+        @foreach (var sala in ViewBag.SalaCapienza)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                @sala.Key: @sala.Value / 120 posti occupati
+                <span class="badge bg-primary rounded-pill">Ridotti: @ViewBag.SalaRidotti[sala.Key]</span>
+            </li>
+        }
+    </ul>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', () => {
+            const forms = document.getElementsByClassName('needs-validation');
+            Array.prototype.filter.call(forms, (form) => {
+                form.addEventListener('submit', (event) => {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>

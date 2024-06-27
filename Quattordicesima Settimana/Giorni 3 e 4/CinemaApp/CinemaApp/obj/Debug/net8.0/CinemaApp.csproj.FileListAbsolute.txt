@@ -1,0 +1,61 @@
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\bin\Debug\net8.0\appsettings.json
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.staticwebassets.runtime.json
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.exe
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.deps.json
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.runtimeconfig.json
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.dll
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.pdb
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.AssemblyInfoInputs.cache
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.AssemblyInfo.cs
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.csproj.CoreCompileInputs.cache
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.RazorAssemblyInfo.cache
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.RazorAssemblyInfo.cs
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.sourcelink.json
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets\msbuild.CinemaApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets\msbuild.build.CinemaApp.props
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CinemaApp.props
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CinemaApp.props
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\scopedcss\bundle\CinemaApp.styles.css
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\scopedcss\projectbundle\CinemaApp.bundle.scp.css
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.dll
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\refint\CinemaApp.dll
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.pdb
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.genruntimeconfig.cache
+C:\Users\antan\Desktop\EPICODE\Esercizi-Epicode\Quattordicesima Settimana\Giorni 3 e 4\CinemaApp\CinemaApp\obj\Debug\net8.0\ref\CinemaApp.dll
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\bin\Debug\net8.0\appsettings.json
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.staticwebassets.runtime.json
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.exe
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.deps.json
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.runtimeconfig.json
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.dll
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\bin\Debug\net8.0\CinemaApp.pdb
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.AssemblyInfoInputs.cache
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.AssemblyInfo.cs
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.csproj.CoreCompileInputs.cache
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.RazorAssemblyInfo.cache
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.RazorAssemblyInfo.cs
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets\msbuild.CinemaApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets\msbuild.build.CinemaApp.props
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CinemaApp.props
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CinemaApp.props
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\scopedcss\bundle\CinemaApp.styles.css
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\scopedcss\projectbundle\CinemaApp.bundle.scp.css
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.dll
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\refint\CinemaApp.dll
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.pdb
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\CinemaApp.genruntimeconfig.cache
+C:\Users\antan\Desktop\CinemaApp\CinemaApp\obj\Debug\net8.0\ref\CinemaApp.dll
