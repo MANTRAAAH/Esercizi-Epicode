@@ -2,11 +2,11 @@
 
 Select * from Products where UnitsInStock >= 40
 
-Select * from Employees where City = 'London'
+Select * from Customers where City = 'London'
 
 Select * from Orders order by Freight desc
 
-Select * from Orders where Freight > 90 AND Freight < 200 order by Freight asc
+Select * from Orders where Freight between 90 and 200 
 
 Select * from Products where CategoryID= 1
 
