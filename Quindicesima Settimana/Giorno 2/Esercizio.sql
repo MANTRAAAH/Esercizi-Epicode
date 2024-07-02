@@ -1,6 +1,6 @@
 ﻿SELECT * FROM Products
 
-Select * from Products where UnitsInStock > 40
+Select * from Products where UnitsInStock >= 40
 
 Select * from Employees where City = 'London'
 
