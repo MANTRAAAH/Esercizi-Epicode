@@ -1,0 +1,47 @@
+﻿@model List<GestioneSpedizioni.Models.Spedizione>
+
+@{
+    ViewData["Title"] = "Elenco Spedizioni";
+}
+
+<h1>Elenco Spedizioni</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Numero Spedizione</th>
+            <th>Data Spedizione</th>
+            <th>Peso</th>
+            <th>Città Destinataria</th>
+            <th>Indirizzo Destinatario</th>
+            <th>Nominativo Destinatario</th>
+            <th>Costo Spedizione</th>
+            <th>Data Consegna Prevista</th>
+            <th>Cliente ID</th>
+            <th>Dettagli</th> <!-- Aggiunto il nuovo header per il bottone Dettagli -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var spedizione in Model)
+        {
+            <tr>
+                <td>@spedizione.NumeroSpedizione</td>
+                <td>@spedizione.DataSpedizione.ToShortDateString()</td>
+                <td>@spedizione.Peso kg</td>
+                <td>@spedizione.CittaDestinataria</td>
+                <td>@spedizione.IndirizzoDestinatario</td>
+                <td>@spedizione.NominativoDestinatario</td>
+                <td>@spedizione.CostoSpedizione.ToString("C")</td>
+                <td>@spedizione.DataConsegnaPrevista.ToShortDateString()</td>
+                <td>@spedizione.ClienteId</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@spedizione.Id" class="btn btn-info">Dettagli</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Create" class="btn btn-primary">Crea Nuova Spedizione</a>
+</div>

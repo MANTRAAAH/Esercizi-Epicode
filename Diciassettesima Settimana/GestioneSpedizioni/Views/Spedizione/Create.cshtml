@@ -1,0 +1,81 @@
+﻿@model GestioneSpedizioni.Models.Spedizione
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Spedizione</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NumeroSpedizione" class="control-label"></label>
+                <input asp-for="NumeroSpedizione" class="form-control" />
+                <span asp-validation-for="NumeroSpedizione" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataSpedizione" class="control-label"></label>
+                <input asp-for="DataSpedizione" class="form-control" id="DataSpedizione"/>
+                <span asp-validation-for="DataSpedizione" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Peso" class="control-label"></label>
+                <input asp-for="Peso" class="form-control" />
+                <span asp-validation-for="Peso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CittaDestinataria" class="control-label"></label>
+                <input asp-for="CittaDestinataria" class="form-control" />
+                <span asp-validation-for="CittaDestinataria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IndirizzoDestinatario" class="control-label"></label>
+                <input asp-for="IndirizzoDestinatario" class="form-control" />
+                <span asp-validation-for="IndirizzoDestinatario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NominativoDestinatario" class="control-label"></label>
+                <input asp-for="NominativoDestinatario" class="form-control" />
+                <span asp-validation-for="NominativoDestinatario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CostoSpedizione" class="control-label"></label>
+                <input asp-for="CostoSpedizione" class="form-control" />
+                <span asp-validation-for="CostoSpedizione" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataConsegnaPrevista" class="control-label"></label>
+                <input asp-for="DataConsegnaPrevista" class="form-control" />
+                <span asp-validation-for="DataConsegnaPrevista" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClienteId" class="control-label"></label>
+                <input asp-for="ClienteId" class="form-control" />
+                <span asp-validation-for="ClienteId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('DataSpedizione').valueAsDate = new Date();
+        });
+    </script>
+}

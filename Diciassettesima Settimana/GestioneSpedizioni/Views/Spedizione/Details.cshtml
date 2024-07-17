@@ -1,0 +1,87 @@
+﻿@model Tuple<GestioneSpedizioni.Models.Spedizione, List<GestioneSpedizioni.Models.Aggiornamenti>>
+
+
+@{
+    ViewData["Title"] = "Dettagli Spedizione";
+}
+
+@if (User.IsInRole("Dipendente"))
+{
+    <h1>Dettagli Spedizione</h1>
+
+    <dl class="row">
+        <dt class="col-sm-3">Numero Spedizione:</dt>
+        <dd class="col-sm-9">@Model.Item1.NumeroSpedizione</dd>
+
+        <dt class="col-sm-3">Data Spedizione:</dt>
+        <dd class="col-sm-9">@Model.Item1.DataSpedizione.ToShortDateString()</dd>
+
+        <dt class="col-sm-3">Peso:</dt>
+        <dd class="col-sm-9">@Model.Item1.Peso</dd>
+
+        <dt class="col-sm-3">Città Destinataria:</dt>
+        <dd class="col-sm-9">@Model.Item1.CittaDestinataria</dd>
+
+        <dt class="col-sm-3">Indirizzo Destinatario:</dt>
+        <dd class="col-sm-9">@Model.Item1.IndirizzoDestinatario</dd>
+
+        <dt class="col-sm-3">Nominativo Destinatario:</dt>
+        <dd class="col-sm-9">@Model.Item1.NominativoDestinatario</dd>
+
+        <dt class="col-sm-3">Costo Spedizione:</dt>
+        <dd class="col-sm-9">@Model.Item1.CostoSpedizione</dd>
+
+        <dt class="col-sm-3">Data Consegna Prevista:</dt>
+        <dd class="col-sm-9">@Model.Item1.DataConsegnaPrevista.ToShortDateString()</dd>
+
+        <dt class="col-sm-3">Cliente ID:</dt>
+        <dd class="col-sm-9">@Model.Item1.ClienteId</dd>
+    </dl>
+
+    <h2>Aggiornamenti:</h2>
+    @if (Model.Item2.Count > 0)
+    {
+        <ul>
+            @foreach (var aggiornamento in Model.Item2)
+            {
+                <li>@aggiornamento.Stato - @aggiornamento.Luogo - @aggiornamento.DataOraAggiornamento</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>Nessun aggiornamento disponibile.</p>
+    }
+
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Item1.Id" class="btn btn-primary">Modifica</a>
+
+        <!-- Bottone per eliminazione visibile solo ai dipendenti -->
+        <form method="post" asp-action="Delete" asp-route-id="@Model.Item1.Id" onsubmit="return confirm('Sei sicuro di voler eliminare questa spedizione?');">
+            <button type="submit" class="btn btn-danger">Elimina</button>
+        </form>
+
+        <a asp-action="Index" class="btn btn-secondary">Torna all'elenco</a>
+    </div>
+}
+else
+{
+    <h2>Aggiornamenti Spedizione</h2>
+    @if (Model.Item2.Count > 0)
+    {
+        <ul>
+            @foreach (var aggiornamento in Model.Item2)
+            {
+                <li>@aggiornamento.Stato - @aggiornamento.Luogo - @aggiornamento.DataOraAggiornamento</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>Nessun aggiornamento disponibile.</p>
+    }
+
+    <div>
+        <a asp-action="Index" class="btn btn-secondary">Torna all'elenco</a>
+    </div>
+}
