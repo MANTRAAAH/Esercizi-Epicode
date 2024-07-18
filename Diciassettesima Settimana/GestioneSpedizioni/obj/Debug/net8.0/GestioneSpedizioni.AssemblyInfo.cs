@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestioneSpedizioni")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fce6848a79ed3083ffb4e26b87496bb0cffd97b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5b7ae8c4443891cceaf89fc0653dbb445b8cd7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestioneSpedizioni")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestioneSpedizioni")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

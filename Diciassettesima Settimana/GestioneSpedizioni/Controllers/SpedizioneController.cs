@@ -287,24 +287,17 @@ WHERE Id = @Id";
                     {
                         var command = connection.CreateCommand();
                         command.Transaction = transaction; // Associa la transazione al comando
-                        command.CommandText = "SELECT COUNT(*) FROM AggiornamentiSpedizioni WHERE SpedizioneId = @SpedizioneID";
+
+                        // Prima elimina tutti gli aggiornamenti associati alla spedizione
+                        command.CommandText = "DELETE FROM AggiornamentiSpedizioni WHERE SpedizioneId = @SpedizioneID";
                         command.Parameters.AddWithValue("@SpedizioneID", id);
+                        command.ExecuteNonQuery();
+                        _logger.LogInformation("Tutti gli aggiornamenti per la spedizione con ID {SpedizioneId} sono stati eliminati.", id);
 
-                        int count = (int)command.ExecuteScalar();
-
-                        if (count == 0)
-                        {
-                            // Se non ci sono aggiornamenti pendenti, procedi con la cancellazione della spedizione
-                            command.CommandText = "DELETE FROM Spedizioni WHERE Id = @SpedizioneID";
-                            command.ExecuteNonQuery(); // Esegue la query di cancellazione
-                            _logger.LogInformation("Spedizione con ID {SpedizioneId} eliminata con successo dalla tabella Spedizioni.", id);
-                        }
-                        else
-                        {
-                            // Gestisci il caso in cui ci sono aggiornamenti pendenti
-                            _logger.LogWarning("Impossibile eliminare la spedizione con ID {SpedizioneId} poiché ci sono aggiornamenti pendenti.", id);
-                            // Potresti voler annullare l'operazione o gestire gli aggiornamenti prima di procedere
-                        }
+                        // Poi elimina la spedizione
+                        command.CommandText = "DELETE FROM Spedizioni WHERE Id = @SpedizioneID";
+                        command.ExecuteNonQuery(); // Esegue la query di cancellazione
+                        _logger.LogInformation("Spedizione con ID {SpedizioneId} eliminata con successo dalla tabella Spedizioni.", id);
 
                         // Completa la transazione
                         transaction.Commit();
@@ -320,6 +313,7 @@ WHERE Id = @Id";
 
             return RedirectToAction("Index");
         }
+
 
         [Authorize]
         [HttpGet]
@@ -447,6 +441,72 @@ GROUP BY CittaDestinataria";
 
             List<SpedizioniPerCittaViewModel> spedizioniPerCitta = _dbManager.Query<SpedizioniPerCittaViewModel>(query);
             return View(spedizioniPerCitta);
+        }
+
+
+        [Authorize(Roles = "Dipendente")]
+        [HttpGet]
+        public IActionResult RicercaAggiornamento()
+        {
+            return View();
+        }
+
+        [Authorize(Roles = "Dipendente")]
+        [HttpPost]
+        public async Task<IActionResult> RicercaAggiornamento(string numeroSpedizione)
+        {
+            _logger.LogInformation("Inizio ricerca spedizione con numero {NumeroSpedizione}", numeroSpedizione);
+            var query = "SELECT * FROM Spedizioni WHERE NumeroSpedizione = @NumeroSpedizione";
+            var parameters = new Dictionary<string, object>
+    {
+        { "@NumeroSpedizione", numeroSpedizione }
+    };
+
+            var spedizione = await _dbManager.QuerySingleOrDefaultAsync<Spedizione>(query, parameters);
+
+            if (spedizione == null)
+            {
+                _logger.LogWarning("Spedizione con numero {NumeroSpedizione} non trovata.", numeroSpedizione);
+                return NotFound();
+            }
+
+            _logger.LogInformation("Spedizione con numero {NumeroSpedizione} trovata. ID: {SpedizioneId}", numeroSpedizione, spedizione.Id);
+            var aggiornamento = new Aggiornamenti { SpedizioneId = spedizione.Id };
+            return View(aggiornamento);
+        }
+
+        [Authorize(Roles = "Dipendente")]
+        [HttpPost]
+        public IActionResult AggiornaStato(Aggiornamenti aggiornamento)
+        {
+            if (ModelState.IsValid)
+            {
+                _logger.LogInformation("Tentativo di aggiornamento dello stato per la spedizione ID: {SpedizioneId}", aggiornamento.SpedizioneId);
+                aggiornamento.DataOraAggiornamento = DateTime.Now;
+                try
+                {
+                    _dbManager.AggiungiAggiornamento(aggiornamento);
+                    _logger.LogInformation("Stato aggiornato con successo per la spedizione ID: {SpedizioneId}", aggiornamento.SpedizioneId);
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Errore durante l'aggiornamento dello stato per la spedizione ID: {SpedizioneId}", aggiornamento.SpedizioneId);
+                    ModelState.AddModelError("", "Si è verificato un errore durante l'aggiornamento dello stato.");
+                }
+            }
+            else
+            {
+                _logger.LogWarning("ModelState non valido durante l'aggiornamento dello stato per la spedizione ID: {SpedizioneId}. Dettagli degli errori di validazione:", aggiornamento.SpedizioneId);
+                foreach (var entry in ModelState)
+                {
+                    foreach (var error in entry.Value.Errors)
+                    {
+                        _logger.LogWarning("Campo: {Field}, Errore: {ErrorMessage}", entry.Key, error.ErrorMessage);
+                    }
+                }
+            }
+            return View("RicercaAggiornamento", aggiornamento);
         }
 
 

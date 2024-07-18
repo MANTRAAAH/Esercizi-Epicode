@@ -13,7 +13,11 @@ string connectionString = configuration.GetConnectionString("DefaultConnection")
 Console.WriteLine($"Connection String: {connectionString}");
 
 // Registra DatabaseManager nel container DI
-builder.Services.AddScoped<DatabaseManager>(provider => new DatabaseManager(connectionString));
+builder.Services.AddScoped<DatabaseManager>(serviceProvider =>
+{
+    var logger = serviceProvider.GetRequiredService<ILogger<DatabaseManager>>();
+    return new DatabaseManager(connectionString, logger);
+});
 // Inside ConfigureServices method in Startup.cs
 builder.Services.AddScoped<ISpedizioneService, SpedizioneService>();
 

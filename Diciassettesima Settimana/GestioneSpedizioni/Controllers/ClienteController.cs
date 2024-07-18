@@ -11,10 +11,10 @@ namespace GestioneSpedizioni.Controllers
         private readonly string connectionString = "DefaultConnection";
         private readonly DatabaseManager dbManager;
 
-        public ClienteController(IConfiguration configuration)
+        public ClienteController(IConfiguration configuration, ILogger<DatabaseManager> logger)
         {
-            string connectionString = configuration.GetConnectionString("DefaultConnection");
-            dbManager = new DatabaseManager(connectionString);
+            string connectionString = configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' non trovata.");
+            dbManager = new DatabaseManager(connectionString, logger);
         }
 
         // Azione per visualizzare tutti i clienti

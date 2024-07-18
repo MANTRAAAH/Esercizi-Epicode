@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
 using System.Linq;
 
 namespace GestioneSpedizioni.Models
@@ -9,10 +11,11 @@ namespace GestioneSpedizioni.Models
     public class DatabaseManager
     {
         public readonly string connectionString;
-
-        public DatabaseManager(string connectionString)
+        private readonly ILogger<DatabaseManager> _logger;
+        public DatabaseManager(string connectionString, ILogger<DatabaseManager> logger)
         {
             this.connectionString = connectionString ?? throw new ArgumentNullException(nameof(connectionString));
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         public IDbTransaction BeginTransaction()
@@ -187,23 +190,58 @@ namespace GestioneSpedizioni.Models
         }
         public void AggiungiAggiornamento(Aggiornamenti aggiornamento)
         {
-            // Implementazione del metodo per inserire un nuovo aggiornamento nel database
-            // Questo è solo un esempio e dovrai adattarlo al tuo specifico database e modello di dati
             string query = @"
 INSERT INTO AggiornamentiSpedizioni (SpedizioneId, DataOraAggiornamento, Stato, Luogo, Descrizione) 
 VALUES (@SpedizioneId, @DataOraAggiornamento, @Stato, @Luogo, @Descrizione)";
 
             var parameters = new Dictionary<string, object>
-        {
-            { "@SpedizioneId", aggiornamento.SpedizioneId },
-            { "@DataOraAggiornamento", aggiornamento.DataOraAggiornamento },
-            { "@Stato", aggiornamento.Stato },
-            { "@Luogo", aggiornamento.Luogo },
-            { "@Descrizione", aggiornamento.Descrizione }
-        };
+            {
+                { "@SpedizioneId", aggiornamento.SpedizioneId },
+                { "@DataOraAggiornamento", aggiornamento.DataOraAggiornamento },
+                { "@Stato", aggiornamento.Stato },
+                { "@Luogo", aggiornamento.Luogo },
+                { "@Descrizione", aggiornamento.Descrizione }
+            };
 
-            // Assumi che ExecuteNonQuery sia un metodo esistente per eseguire comandi SQL non di query
-            ExecuteNonQuery(query, parameters);
+            try
+            {
+                ExecuteNonQuery(query, parameters);
+                _logger.LogInformation("Aggiornamento aggiunto con successo per la spedizione ID: {SpedizioneId}", aggiornamento.SpedizioneId);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Errore nell'aggiunta dell'aggiornamento per la spedizione ID: {SpedizioneId}", aggiornamento.SpedizioneId);
+                throw; // Rilancia l'eccezione per gestirla ulteriormente se necessario
+            }
+        }
+        public async Task<T> QuerySingleOrDefaultAsync<T>(string query, Dictionary<string, object> parameters = null) where T : new()
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                await connection.OpenAsync();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    if (parameters != null)
+                    {
+                        foreach (var param in parameters)
+                        {
+                            command.Parameters.AddWithValue(param.Key, param.Value ?? DBNull.Value);
+                        }
+                    }
+
+                    using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                    {
+                        T result = default(T);
+
+                        if (await reader.ReadAsync())
+                        {
+                            result = PopulateFromReader<T>(reader);
+                        }
+
+                        return result;
+                    }
+                }
+            }
         }
 
 
