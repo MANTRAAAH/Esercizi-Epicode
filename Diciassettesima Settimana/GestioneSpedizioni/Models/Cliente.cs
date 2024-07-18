@@ -5,8 +5,7 @@
         public int IDCliente { get; set; }
         public string Nome { get; set; }
         public string Cognome { get; set; }
-        public string CodiceFiscale { get; set; }
-        public string PartitaIVA { get; set; }
+        // Combinato CodiceFiscale e PartitaIVA in un unico campo per allinearsi con la struttura della tabella
+        public string CodiceFiscalePartitaIVA { get; set; }
     }
-
 }

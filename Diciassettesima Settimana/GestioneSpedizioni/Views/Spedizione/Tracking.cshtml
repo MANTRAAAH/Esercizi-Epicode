@@ -2,16 +2,12 @@
 
 <form asp-action="Tracking" method="post">
     <div>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="Nome" required>
-    </div>
-    <div>
-        <label for="cognome">Cognome</label>
-        <input type="text" id="cognome" name="Cognome" required>
+        <label for="NumeroSpedizione">Numero di Spedizione</label>
+        <input type="text" id="NumeroSpedizione" name="NumeroSpedizione" required>
     </div>
     <div>
         <label for="CodiceFiscalePartitaIVA">Partita IVA o Codice Fiscale</label>
-        <input type="text" id="CodiceFiscalePartitaIVA" name="CodiceFiscalePartitaIVA">
+        <input type="text" id="CodiceFiscalePartitaIVA" name="CodiceFiscalePartitaIVA" required>
     </div>
     <div>
         <input type="submit" value="Cerca Spedizione">

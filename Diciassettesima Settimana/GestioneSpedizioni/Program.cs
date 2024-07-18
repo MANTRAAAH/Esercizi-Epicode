@@ -1,4 +1,5 @@
 using GestioneSpedizioni.Models;
+using GestioneSpedizioni.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Configuration;
 
@@ -13,6 +14,9 @@ Console.WriteLine($"Connection String: {connectionString}");
 
 // Registra DatabaseManager nel container DI
 builder.Services.AddScoped<DatabaseManager>(provider => new DatabaseManager(connectionString));
+// Inside ConfigureServices method in Startup.cs
+builder.Services.AddScoped<ISpedizioneService, SpedizioneService>();
+
 
 // Configura l'autenticazione con cookie
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

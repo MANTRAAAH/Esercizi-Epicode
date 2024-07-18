@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BJV03wi66Xo=",
+  "dgSpecHash": "44otieEylDE=",
   "success": true,
   "projectFilePath": "C:\\Users\\antan\\Desktop\\EPICODE\\Esercizi-Epicode\\Diciassettesima Settimana\\GestioneSpedizioni\\GestioneSpedizioni.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\antan\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\antan\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",
+    "C:\\Users\\antan\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\antan\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\antan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\antan\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

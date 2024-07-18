@@ -8,7 +8,7 @@ namespace GestioneSpedizioni.Models
 {
     public class DatabaseManager
     {
-        private readonly string connectionString;
+        public readonly string connectionString;
 
         public DatabaseManager(string connectionString)
         {

@@ -23,6 +23,7 @@ namespace GestioneSpedizioni.Controllers
         }
 
         // Action to display all shipments
+        [Authorize(Roles = "Dipendente")]
         public IActionResult Index()
         {
             string query = "SELECT * FROM Spedizioni";
@@ -31,7 +32,7 @@ namespace GestioneSpedizioni.Controllers
         }
 
         // Action to display details of a specific shipment
-        [Authorize(Roles = "User, Dipendente")]
+        [Authorize]
         public IActionResult Details(int id)
         {
             var userRole = User.FindFirstValue(ClaimTypes.Role);
@@ -50,7 +51,7 @@ namespace GestioneSpedizioni.Controllers
                 return NotFound(); // Handling case where shipment is not found
             }
 
-            string aggiornamentiQuery = "SELECT * FROM AggiornamentiSpedizioni WHERE SpedizioneId = @SpedizioneID";
+            string aggiornamentiQuery = "SELECT * FROM AggiornamentiSpedizioni WHERE SpedizioneId = @SpedizioneID ORDER BY DataOraAggiornamento DESC";
             var aggiornamentiParameters = new Dictionary<string, object> { { "@SpedizioneID", id } };
             List<Aggiornamenti> aggiornamenti = _dbManager.Query<Aggiornamenti>(aggiornamentiQuery, aggiornamentiParameters);
 
@@ -60,6 +61,7 @@ namespace GestioneSpedizioni.Controllers
         }
 
         // Action to handle the creation of a new shipment
+        [Authorize(Roles = "Dipendente")]
         [HttpPost]
         public ActionResult Create(Spedizione spedizione)
         {
@@ -102,6 +104,7 @@ VALUES (@NumeroSpedizione, @DataSpedizione, @Peso, @CittaDestinataria, @Indirizz
                 return View(spedizione);
             }
         }
+        [Authorize(Roles = "Dipendente")]
         public IActionResult Create()
         {
             // Crea un'istanza del modello Spedizione
@@ -112,6 +115,7 @@ VALUES (@NumeroSpedizione, @DataSpedizione, @Peso, @CittaDestinataria, @Indirizz
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Dipendente")]
         public ActionResult Edit(SpedizioneEditViewModel spedizioneViewModel)
         {
             _logger.LogInformation("Inizio del processo di modifica per la spedizione con ID {SpedizioneId}", spedizioneViewModel.Id);
@@ -194,6 +198,7 @@ WHERE Id = @Id";
             }
         }
 
+        [Authorize(Roles = "Dipendente")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -263,7 +268,7 @@ WHERE Id = @Id";
             return date > SqlDateTime.MinValue.Value && date <= SqlDateTime.MaxValue.Value;
         }
 
-
+        [Authorize(Roles = "Dipendente")]
         public ActionResult Delete(int id)
         {
             _logger.LogInformation("Inizio del processo di cancellazione per la spedizione con ID {SpedizioneId}", id);
@@ -316,13 +321,14 @@ WHERE Id = @Id";
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         [HttpGet]
         public IActionResult Tracking()
         {
             return View();
         }
 
-
+        [Authorize]
         public IActionResult Tracking(TrackingRequest request)
         {
             Spedizione spedizione = null;
@@ -331,15 +337,15 @@ WHERE Id = @Id";
             string query = @"
 SELECT s.* FROM [dbo].[Spedizioni] s
 INNER JOIN [dbo].[Clienti] c ON s.ClienteId = c.IDCliente
-WHERE c.Nome = @Nome AND c.Cognome = @Cognome AND c.CodiceFiscalePartitaIVA = @CodiceFiscalePartitaIVA";
+WHERE s.NumeroSpedizione = @NumeroSpedizione AND c.CodiceFiscalePartitaIVA = @CodiceFiscalePartitaIVA";
+
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Nome", request.Nome);
-                command.Parameters.AddWithValue("@Cognome", request.Cognome);
-                // Assicurati che il nome del parametro qui corrisponda esattamente a quello nella query
+                command.Parameters.AddWithValue("@NumeroSpedizione", request.NumeroSpedizione);
                 command.Parameters.AddWithValue("@CodiceFiscalePartitaIVA", request.CodiceFiscalePartitaIVA ?? string.Empty);
+
 
                 try
                 {
@@ -375,7 +381,73 @@ WHERE c.Nome = @Nome AND c.Cognome = @Cognome AND c.CodiceFiscalePartitaIVA = @C
             // Reindirizza a una vista con i dettagli della spedizione o passa i dati direttamente
             return RedirectToAction("Details", new { id = spedizione.Id });
         }
+        // Metodo per ottenere le spedizioni in consegna oggi
+        public IActionResult SpedizioniInConsegnaOggi()
+        {
+            DateTime oggi = DateTime.Today;
+            string query = @"
+SELECT COUNT(*)
+FROM Spedizioni
+WHERE CAST(DataConsegnaPrevista AS DATE) = @Oggi";
 
+            var parameters = new Dictionary<string, object>
+    {
+        { "@Oggi", oggi }
+    };
+
+            int count = (int)_dbManager.ExecuteScalar(query, parameters);
+
+            if (count > 0)
+            {
+                // Se ci sono spedizioni in consegna oggi, si può fare una seconda query per ottenere i dettagli
+                query = @"
+SELECT *
+FROM Spedizioni
+WHERE CAST(DataConsegnaPrevista AS DATE) = @Oggi";
+
+                List<Spedizione> spedizioniInConsegnaOggi = _dbManager.Query<Spedizione>(query, parameters);
+                return View(spedizioniInConsegnaOggi);
+            }
+            else
+            {
+                // Se non ci sono spedizioni in consegna oggi, tornare una vista vuota o gestire di conseguenza
+                return View(new List<Spedizione>()); // o qualsiasi altra gestione come Redirect, Error View, etc.
+            }
+        }
+
+
+        // Metodo per ottenere il numero totale delle spedizioni in attesa di consegna
+        public IActionResult NumeroSpedizioniInAttesaConsegna()
+        {
+            string query = @"
+SELECT COUNT(*)
+FROM Spedizioni
+WHERE CAST(DataConsegnaPrevista AS DATE) > @Oggi";
+
+            var parameters = new Dictionary<string, object>
+    {
+        { "@Oggi", DateTime.Today }
+    };
+
+            object result = _dbManager.ExecuteScalar(query, parameters);
+            int numeroSpedizioniInAttesa = Convert.ToInt32(result);
+
+            return Content(numeroSpedizioniInAttesa.ToString());
+        }
+
+
+
+        // Metodo per ottenere il numero totale delle spedizioni raggruppate per città destinataria
+        public IActionResult SpedizioniPerCittaDestinataria()
+        {
+            string query = @"
+SELECT CittaDestinataria AS Citta, COUNT(*) AS NumeroSpedizioni
+FROM Spedizioni
+GROUP BY CittaDestinataria";
+
+            List<SpedizioniPerCittaViewModel> spedizioniPerCitta = _dbManager.Query<SpedizioniPerCittaViewModel>(query);
+            return View(spedizioniPerCitta);
+        }
 
 
 

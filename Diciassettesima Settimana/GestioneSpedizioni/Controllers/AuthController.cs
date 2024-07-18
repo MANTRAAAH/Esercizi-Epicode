@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using GestioneSpedizioni.Models;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 public class AuthController : Controller
 {
@@ -33,25 +34,26 @@ public class AuthController : Controller
                 return View(model);
             }
 
-            // Salva l'utente nel database
-            string query = @"INSERT INTO Users (Username, Password) 
-                             VALUES (@Username, @Password)";
+            // Salva l'utente nel database con il ruolo "User" di default
+            string query = @"INSERT INTO Users (Username, Password, Role) 
+                             VALUES (@Username, @Password, @Role)";
 
             var parameters = new Dictionary<string, object>
             {
                 { "@Username", model.Username },
-                { "@Password", model.Password } // Da hashare con un algoritmo sicuro
+                { "@Password", model.Password },
+                { "@Role", "User" } // Ruolo di default
             };
 
             int rowsAffected = _dbManager.ExecuteNonQuery(query, parameters);
 
             if (rowsAffected > 0)
             {
-                // Puoi effettuare il login automaticamente dopo la registrazione
+                // Effettua il login automaticamente dopo la registrazione
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Name, model.Username)
-                    // Aggiungi altri claim se necessario
+                    new Claim(ClaimTypes.Name, model.Username),
+                    new Claim(ClaimTypes.Role, "User")
                 };
 
                 var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -63,7 +65,6 @@ public class AuthController : Controller
             }
             else
             {
-                // Gestire il caso di errore
                 ModelState.AddModelError(string.Empty, "Errore durante la registrazione.");
                 return View(model);
             }
@@ -71,23 +72,6 @@ public class AuthController : Controller
 
         return View(model);
     }
-    // Metodo per recuperare il ruolo dell'utente dal database
-    private string GetUserRoleFromDatabase(string username)
-    {
-        string query = "SELECT Role FROM Users WHERE Username = @Username";
-        var parameters = new Dictionary<string, object> { { "@Username", username } };
-
-        // Eseguire la query per ottenere il ruolo dell'utente
-        object roleObj = _dbManager.ExecuteScalar(query, parameters);
-
-        if (roleObj != null)
-        {
-            return roleObj.ToString();
-        }
-
-        return string.Empty; // Ritorna vuoto se il ruolo non è trovato
-    }
-
 
     // GET: /Auth/Login
     public IActionResult Login()
@@ -109,11 +93,10 @@ public class AuthController : Controller
 
                 // Creazione delle claims per l'utente autenticato
                 var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, model.Username),
-                new Claim(ClaimTypes.Role, role) // Aggiungi il ruolo come claim
-                // Aggiungi altri claim se necessario
-            };
+                {
+                    new Claim(ClaimTypes.Name, model.Username),
+                    new Claim(ClaimTypes.Role, role) // Aggiungi il ruolo come claim
+                };
 
                 var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 var principal = new ClaimsPrincipal(identity);
@@ -121,11 +104,18 @@ public class AuthController : Controller
                 // Esegui il login
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
-                return RedirectToAction("Index", "Home");
+                // Redirigi in base al ruolo
+                if (role == "Dipendente")
+                {
+                    return RedirectToAction("Dashboard", "Home");
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home");
+                }
             }
             else
             {
-                // Credenziali non valide
                 ModelState.AddModelError(string.Empty, "Credenziali non valide.");
                 return View(model);
             }
@@ -134,7 +124,7 @@ public class AuthController : Controller
         return View(model);
     }
 
-    // POST: /Auth/Logout
+    // GET: /Auth/Logout
     [HttpGet]
     public async Task<IActionResult> Logout()
     {
@@ -154,13 +144,28 @@ public class AuthController : Controller
     // Verifica le credenziali dell'utente nel database
     private bool VerifyCredentials(string username, string password)
     {
-        string query = "SELECT COUNT(*) FROM Users WHERE Username = @Username AND Password = @Password";
-        var parameters = new Dictionary<string, object>
+        string query = "SELECT Password FROM Users WHERE Username = @Username";
+        var parameters = new Dictionary<string, object> { { "@Username", username } };
+        string storedPassword = (string)_dbManager.ExecuteScalar(query, parameters);
+
+        // Confronta la password direttamente
+        return storedPassword == password;
+    }
+
+    // Metodo per recuperare il ruolo dell'utente dal database
+    private string GetUserRoleFromDatabase(string username)
+    {
+        string query = "SELECT Role FROM Users WHERE Username = @Username";
+        var parameters = new Dictionary<string, object> { { "@Username", username } };
+
+        // Eseguire la query per ottenere il ruolo dell'utente
+        object roleObj = _dbManager.ExecuteScalar(query, parameters);
+
+        if (roleObj != null)
         {
-            { "@Username", username },
-            { "@Password", password } // Da hashare con un algoritmo sicuro
-        };
-        int count = (int)_dbManager.ExecuteScalar(query, parameters);
-        return count > 0;
+            return roleObj.ToString();
+        }
+
+        return string.Empty; // Ritorna vuoto se il ruolo non è trovato
     }
 }

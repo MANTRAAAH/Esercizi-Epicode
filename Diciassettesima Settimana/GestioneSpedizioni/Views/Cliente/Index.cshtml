@@ -1,0 +1,39 @@
+﻿@model List<GestioneSpedizioni.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Elenco Clienti";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Codice Fiscale / Partita IVA</th> <!-- Aggiornato -->
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <td>@cliente.IDCliente</td>
+                <td>@cliente.Nome</td>
+                <td>@cliente.Cognome</td>
+                <td>@cliente.CodiceFiscalePartitaIVA</td> <!-- Aggiornato -->
+                <td>
+                    <a href="@Url.Action("Details", "Cliente", new { id = cliente.IDCliente })" class="btn btn-info">Dettagli</a>
+                    <a href="@Url.Action("Edit", "Cliente", new { id = cliente.IDCliente })" class="btn btn-primary">Modifica</a>
+                    <a href="@Url.Action("Delete", "Cliente", new { id = cliente.IDCliente })" class="btn btn-danger">Elimina</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a href="@Url.Action("Create", "Cliente")" class="btn btn-success">Aggiungi Nuovo Cliente</a>
+</div>

@@ -2,8 +2,7 @@
 {
     public class TrackingRequest
     {
-        public string Nome { get; set; }
-        public string Cognome { get; set; }
+        public string NumeroSpedizione { get; set; }
         public string CodiceFiscalePartitaIVA { get; set; }
     }
 

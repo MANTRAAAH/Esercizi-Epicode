@@ -1,0 +1,25 @@
+﻿@model List<SpedizioniPerCittaViewModel>
+
+@{
+    ViewData["Title"] = "Numero Spedizioni per Città Destinataria";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Città Destinataria</th>
+            <th>Numero di Spedizioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Citta</td>
+                <td>@item.NumeroSpedizioni</td>
+            </tr>
+        }
+    </tbody>
+</table>

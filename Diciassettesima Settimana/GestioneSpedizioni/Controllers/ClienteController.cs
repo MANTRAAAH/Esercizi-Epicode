@@ -1,15 +1,19 @@
 ﻿using GestioneSpedizioni.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestioneSpedizioni.Controllers
 {
+    [Authorize(Roles = "Dipendente")]
     public class ClienteController : Controller
     {
         private readonly string connectionString = "DefaultConnection";
         private readonly DatabaseManager dbManager;
 
-        public ClienteController()
+        public ClienteController(IConfiguration configuration)
         {
+            string connectionString = configuration.GetConnectionString("DefaultConnection");
             dbManager = new DatabaseManager(connectionString);
         }
 
@@ -40,16 +44,15 @@ namespace GestioneSpedizioni.Controllers
         [HttpPost]
         public ActionResult Create(Cliente cliente)
         {
-            string query = @"INSERT INTO Clienti (Nome, Cognome, CodiceFiscale, PartitaIVA) 
-                         VALUES (@Nome, @Cognome, @CodiceFiscale, @PartitaIVA)";
+            string query = @"INSERT INTO Clienti (Nome, Cognome, CodiceFiscalePartitaIVA) 
+                     VALUES (@Nome, @Cognome, @CodiceFiscalePartitaIVA)";
 
             var parameters = new Dictionary<string, object>
-        {
-            { "@Nome", cliente.Nome },
-            { "@Cognome", cliente.Cognome },
-            { "@CodiceFiscale", cliente.CodiceFiscale },
-            { "@PartitaIVA", cliente.PartitaIVA }
-        };
+    {
+        { "@Nome", cliente.Nome },
+        { "@Cognome", cliente.Cognome },
+        { "@CodiceFiscalePartitaIVA", cliente.CodiceFiscalePartitaIVA }
+    };
 
             int rowsAffected = dbManager.ExecuteNonQuery(query, parameters);
 
@@ -78,17 +81,16 @@ namespace GestioneSpedizioni.Controllers
         public ActionResult Edit(Cliente cliente)
         {
             string query = @"UPDATE Clienti 
-                         SET Nome = @Nome, Cognome = @Cognome, CodiceFiscale = @CodiceFiscale, PartitaIVA = @PartitaIVA 
-                         WHERE IDCliente = @IDCliente";
+                     SET Nome = @Nome, Cognome = @Cognome, CodiceFiscalePartitaIVA = @CodiceFiscalePartitaIVA 
+                     WHERE IDCliente = @IDCliente";
 
             var parameters = new Dictionary<string, object>
-        {
-            { "@Nome", cliente.Nome },
-            { "@Cognome", cliente.Cognome },
-            { "@CodiceFiscale", cliente.CodiceFiscale },
-            { "@PartitaIVA", cliente.PartitaIVA },
-            { "@IDCliente", cliente.IDCliente }
-        };
+    {
+        { "@Nome", cliente.Nome },
+        { "@Cognome", cliente.Cognome },
+        { "@CodiceFiscalePartitaIVA", cliente.CodiceFiscalePartitaIVA },
+        { "@IDCliente", cliente.IDCliente }
+    };
 
             int rowsAffected = dbManager.ExecuteNonQuery(query, parameters);
 

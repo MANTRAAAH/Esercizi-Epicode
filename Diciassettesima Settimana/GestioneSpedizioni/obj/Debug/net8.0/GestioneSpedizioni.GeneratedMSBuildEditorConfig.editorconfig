@@ -42,6 +42,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/antan/Desktop/EPICODE/Esercizi-Epicode/Diciassettesima Settimana/GestioneSpedizioni/Views/Cliente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/antan/Desktop/EPICODE/Esercizi-Epicode/Diciassettesima Settimana/GestioneSpedizioni/Views/Cliente/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/antan/Desktop/EPICODE/Esercizi-Epicode/Diciassettesima Settimana/GestioneSpedizioni/Views/Cliente/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/antan/Desktop/EPICODE/Esercizi-Epicode/Diciassettesima Settimana/GestioneSpedizioni/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/antan/Desktop/EPICODE/Esercizi-Epicode/Diciassettesima Settimana/GestioneSpedizioni/Views/Home/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/antan/Desktop/EPICODE/Esercizi-Epicode/Diciassettesima Settimana/GestioneSpedizioni/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +92,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/antan/Desktop/EPICODE/Esercizi-Epicode/Diciassettesima Settimana/GestioneSpedizioni/Views/Spedizione/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlZGl6aW9uZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/antan/Desktop/EPICODE/Esercizi-Epicode/Diciassettesima Settimana/GestioneSpedizioni/Views/Spedizione/NumeroSpedizioniPerCittaDestinataria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlZGl6aW9uZVxOdW1lcm9TcGVkaXppb25pUGVyQ2l0dGFEZXN0aW5hdGFyaWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/antan/Desktop/EPICODE/Esercizi-Epicode/Diciassettesima Settimana/GestioneSpedizioni/Views/Spedizione/Tracking.cshtml]

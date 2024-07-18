@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <a href="@Url.Action("Create", "Spedizione")" class="btn btn-primary">Crea Nuova Spedizione</a>
+</div>
+
+<div>
+    <a href="@Url.Action("Index", "Spedizione")" class="btn btn-secondary">Mostra Tutte le Spedizioni</a>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Spedizioni in Consegna Oggi</h3>
+    @if (ViewBag.SpedizioniInConsegnaOggi != null)
+    {
+        foreach (var spedizione in ViewBag.SpedizioniInConsegnaOggi)
+        {
+            <div>
+                <p>Numero Spedizione: @spedizione.NumeroSpedizione</p>
+                <p>Data Spedizione: @spedizione.DataSpedizione.ToShortDateString()</p>
+                <p>Città Destinataria: @spedizione.CittaDestinataria</p>
+                <hr />
+            </div>
+        }
+    }
+    else
+    {
+        <p>Nessuna spedizione in consegna oggi.</p>
+    }
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Numero di Spedizioni in Attesa di Consegna</h3>
+    <p>@ViewBag.NumeroSpedizioniInAttesa</p>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Numero di Spedizioni per Città Destinataria</h3>
+    @if (ViewBag.SpedizioniPerCitta != null && ViewBag.SpedizioniPerCitta.Count > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Città</th>
+                    <th>Numero di Spedizioni</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in ViewBag.SpedizioniPerCitta)
+                {
+                    <tr>
+                        <td>@item.Citta</td>
+                        <td>@item.NumeroSpedizioni</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Nessuna informazione disponibile.</p>
+    }
+</div>
+
